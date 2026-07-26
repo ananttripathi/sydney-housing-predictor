@@ -41,12 +41,35 @@ SUBURB_STATION_DISTANCE = {
 }
 
 
+AUTHOR_INFO = {
+    "Name": "Anant Kumar Tripathi",
+    "Student ID": "226634688",
+    "Course code": "S773",
+    "Course name": "Master of Data Science (Global)",
+    "Subject": "SIG720 - Machine Learning",
+    "Task": "8D",
+    "GitHub": "https://github.com/ananttripathi/",
+}
+
+
 @st.cache_resource
 def load_model():
     return joblib.load(MODEL_PATH)
 
 
+def render_sidebar():
+    with st.sidebar:
+        st.subheader("About this project")
+        for label, value in AUTHOR_INFO.items():
+            if label == "GitHub":
+                st.markdown(f"**{label}:** [{value}]({value})")
+            else:
+                st.markdown(f"**{label}:** {value}")
+
+
 def main():
+    render_sidebar()
+
     st.title("Sydney Housing Price Predictor")
     st.caption(
         "Decision-support prototype for the 8D ML Mini Project - Random Forest model trained on "
@@ -104,6 +127,13 @@ def main():
 
         with st.expander("See the exact features sent to the model"):
             st.dataframe(X)
+
+    st.divider()
+    st.caption(
+        f"Built by {AUTHOR_INFO['Name']} ({AUTHOR_INFO['Student ID']}) - "
+        f"{AUTHOR_INFO['Course name']}, {AUTHOR_INFO['Subject']} - Task {AUTHOR_INFO['Task']}. "
+        f"[Source on GitHub]({AUTHOR_INFO['GitHub']})"
+    )
 
 
 if __name__ == "__main__":

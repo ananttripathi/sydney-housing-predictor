@@ -47,6 +47,11 @@ spaces, a sale/valuation date, and the distance to the nearest train
 station (a sensible suburb-typical default is pre-filled), then click
 **Predict sale price**.
 
+## Live deployment
+
+The app is deployed and publicly accessible at:
+**https://sydney-housing-predictor.streamlit.app/**
+
 ## Deploying for free on GitHub + Streamlit Community Cloud
 
 1. Create a new **public** GitHub repository and push this whole folder to
@@ -63,14 +68,13 @@ station (a sensible suburb-typical default is pre-filled), then click
 ## Note on the app screenshot in the report
 
 This project was built and verified in a sandboxed, headless analysis
-environment with no GUI browser available, so a literal screenshot of a
-running browser session could not be captured here. `fig_app_mockup.png`
-is an honest, clearly-labelled mockup that reproduces `app.py`'s exact
-layout and widget labels, populated with a **real prediction from the
-trained model** (not a made-up number). Running `streamlit run app.py`
-locally, or deploying via the steps above, reproduces this exact
-interactive interface, and taking a screenshot of that live session is
-recommended before final submission if a literal screenshot is required.
+environment with no GUI browser available, so the screenshot originally
+included in the report (`fig_app_mockup.png`) is an honest, clearly-labelled
+mockup that reproduces `app.py`'s exact layout and widget labels, populated
+with a **real prediction from the trained model** (not a made-up number).
+The app has since been deployed live at the link above — visiting it and
+taking a real screenshot there is recommended for final submission in
+place of the mockup, if a literal screenshot is required.
 
 ## GenAI acknowledgement
 
