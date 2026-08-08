@@ -35,7 +35,11 @@ st.markdown("""
     }
     div[data-testid="stMetric"] * {color: #0f2a4a !important;}
     div[data-testid="stMetricLabel"] p {color: #4a6280 !important; font-weight: 600;}
-    div[data-testid="stMetricValue"] {color: #0f2a4a !important;}
+    div[data-testid="stMetricValue"] {
+        color: #0f2a4a !important; font-size: 1.5rem !important;
+        white-space: normal !important; overflow: visible !important; text-overflow: unset !important;
+    }
+    div[data-testid="stMetricValue"] div {overflow: visible !important; text-overflow: unset !important;}
     div[data-testid="stMetricDeltaIcon-Up"] + div,
     div[data-testid="stMetricDelta"] {color: #0d7a3f !important;}
     div[data-testid="stMetricDelta"] svg {fill: #0d7a3f !important;}
@@ -77,6 +81,17 @@ SUBURB_BLURB = {
     "Bankstown": "Affordable outer south-west, transport hub",
 }
 DWELLING_TYPES = ["House", "Townhouse/Semi", "Unit"]
+
+
+def compact_price(value: float) -> str:
+    """Format a dollar amount compactly (e.g. $8.7M, $640K) so it always fits in a metric box."""
+    if value >= 1_000_000:
+        millions = value / 1_000_000
+        text = f"{millions:.2f}".rstrip("0").rstrip(".")
+        return f"${text}M"
+    if value >= 1_000:
+        return f"${value/1_000:,.0f}K"
+    return f"${value:,.0f}"
 
 # --------------------------------------------------------------------------- hero
 st.markdown("""
@@ -136,9 +151,13 @@ with tab_predict:
             """, unsafe_allow_html=True)
 
             m1, m2, m3 = st.columns(3)
-            m1.metric("Suburb min", f"${ctx['min']:,.0f}")
-            m2.metric("Suburb median", f"${ctx['median']:,.0f}", delta=f"{(pred_price/ctx['median']-1)*100:+.0f}% vs. this pred.")
-            m3.metric("Suburb max", f"${ctx['max']:,.0f}")
+            m1.metric("Suburb min", compact_price(ctx["min"]), help=f"${ctx['min']:,.0f}")
+            m2.metric(
+                "Suburb median", compact_price(ctx["median"]),
+                delta=f"{(pred_price/ctx['median']-1)*100:+.0f}% vs. pred.",
+                help=f"${ctx['median']:,.0f}",
+            )
+            m3.metric("Suburb max", compact_price(ctx["max"]), help=f"${ctx['max']:,.0f}")
 
             fig = go.Figure()
             fig.add_trace(go.Bar(
@@ -147,13 +166,19 @@ with tab_predict:
                 marker_color=["#a9c4de", "#5f8fbd", "#e8863c", "#a9c4de"],
                 text=[f"${v:,.0f}" for v in [ctx["min"], ctx["median"], pred_price, ctx["max"]]],
                 textposition="outside",
+                textfont=dict(color="#0f2a4a", size=13),
             ))
             fig.update_layout(
                 height=320, margin=dict(l=10, r=10, t=20, b=10),
                 yaxis_title="Price ($)", showlegend=False,
                 plot_bgcolor="white", paper_bgcolor="white",
+                font=dict(color="#0f2a4a"),
             )
-            st.plotly_chart(fig, width="stretch")
+            fig.update_xaxes(color="#0f2a4a", tickfont=dict(color="#0f2a4a"), gridcolor="#e6edf4")
+            fig.update_yaxes(color="#0f2a4a", tickfont=dict(color="#0f2a4a"), gridcolor="#e6edf4")
+            # theme=None keeps our explicit colors instead of Streamlit overriding them to match
+            # the viewer's light/dark mode (which was causing white-on-white invisible text).
+            st.plotly_chart(fig, width="stretch", theme=None)
 
             st.info(
                 "⚠️ This is a statistical estimate from a small (103-property) training sample, "
