@@ -1,0 +1,507 @@
+address,suburb,sale_date,sale_method,price,beds,baths,parking,land_size_sqm,property_type
+"3/6 Brierley Street, Mosman",Mosman,2026-08-04,private treaty,975000,2,1,,,Apartment
+"11/23 Warringah Road, Mosman",Mosman,2026-07-31,private treaty,865000,1,1,1,,Apartment
+"142/15 Hale Road, Mosman",Mosman,2026-07-24,private treaty,3800000,3,2,2,,Retirement Living
+"5 Botanic Road, Mosman",Mosman,2026-07-21,auction,8700000,4,3,2,,House
+"8/6 Punch Street, Mosman",Mosman,2026-07-20,private treaty,700000,1,1,,,Apartment
+"4/3 Millett Road, Mosman",Mosman,2026-07-16,prior to auction,1050000,2,1,1,,Apartment
+"7/154 Raglan Street, Mosman",Mosman,2026-07-14,private treaty,785000,1,1,1,,Apartment
+"20/96 Ourimbah Road, Mosman",Mosman,2026-07-07,prior to auction,1030000,2,1,1,,Apartment
+"4/125 Raglan Street, Mosman",Mosman,2026-07-07,prior to auction,990000,2,1,,,Apartment
+"22/43 Musgrave Street, Mosman",Mosman,2026-07-03,private treaty,1310000,2,1,1,,Apartment
+"67 Cowles Road, Mosman",Mosman,2026-07-02,prior to auction,3225000,4,2,,,House
+"5 Central Avenue, Mosman",Mosman,2026-06-19,private treaty,6399000,5,4,2,607,House
+"2/184 Raglan Street, Mosman",Mosman,2026-06-17,private treaty,1237500,2,1,1,,Apartment
+"5B/699 Military Road, Mosman",Mosman,2026-06-17,prior to auction,1450000,2,1,1,,Apartment
+"15/3 Belmont Road, Mosman",Mosman,2026-06-12,prior to auction,1760000,2,2,1,,Apartment
+"1/10 Lang Street, Mosman",Mosman,2026-06-06,private treaty,3200000,4,2,1,,Semi-detached
+"14 Almora Street, Mosman",Mosman,2026-06-06,auction,5025000,3,3,2,,House
+"16/5 The Esplanade, Mosman",Mosman,2026-06-06,auction,1570000,1,1,1,,Apartment
+"1/30 Hale Road, Mosman",Mosman,2026-06-05,private treaty,2180000,3,2,2,,Townhouse
+"2 Morella Road, Mosman",Mosman,2026-06-05,private treaty,7360000,5,4,4,594,House
+"21/96 Ourimbah Road, Mosman",Mosman,2026-06-05,private treaty,900000,2,1,1,,Apartment
+"105 Holt Avenue, Mosman",Mosman,2026-06-05,prior to auction,3550000,4,3,,,House
+"10/116 Belmont Road, Mosman",Mosman,2026-06-05,private treaty,2380000,3,2,2,192,Townhouse
+"10/1 Hampden Street, Mosman",Mosman,2026-06-04,prior to auction,825000,1,1,1,,Apartment
+"9/238 Raglan Street, Mosman",Mosman,2026-06-04,auction,1590000,2,1,1,,Apartment
+"13/17-23 Heydon Street, Mosman",Mosman,2026-06-04,private treaty,1360000,2,1,1,,Retirement Living
+"11 Euryalus Street, Mosman",Mosman,2026-06-04,prior to auction,7260000,6,4,3,879,House
+"3/1A Oswald Street, Mosman",Mosman,2026-06-04,private treaty,1140000,2,1,,,Apartment
+"96 Glover Street, Mosman",Mosman,2026-06-02,auction,3390000,4,3,2,379,House
+"17/22 Mosman Street, Mosman",Mosman,2026-06-01,prior to auction,827000,1,1,1,,Apartment
+"14 Calypso Avenue, Mosman",Mosman,2026-05-30,auction,4820000,4,2,2,,House
+"28/9 Mandolong Road, Mosman",Mosman,2026-05-29,private treaty,800000,1,1,,,Apartment
+"2/182 Raglan Street, Mosman",Mosman,2026-05-29,prior to auction,1275000,2,1,1,,Apartment
+"1/31 Musgrave Street, Mosman",Mosman,2026-05-29,prior to auction,2250000,2,1,1,,Apartment
+"12/22 Warringah Road, Mosman",Mosman,2026-05-26,private treaty,1030000,1,1,1,787,Apartment
+"3/209 Spit Road, Mosman",Mosman,2026-05-22,private treaty,1390000,2,1,1,,Apartment
+"2/78 Shadforth Street, Mosman",Mosman,2026-05-22,private treaty,785000,1,1,1,51,Apartment
+"20 Garners Avenue, Marrickville",Marrickville,2026-08-06,prior to auction,1925000,2,1,,182,House
+"6 Enfield Street, Marrickville",Marrickville,2026-08-05,auction,2320000,3,1,1,252,House
+"27/176 Marrickville Road, Marrickville",Marrickville,2026-08-05,auction,2600000,3,2,4,,Apartment
+"216/186C Victoria Road, Marrickville",Marrickville,2026-08-04,prior to auction,800000,1,1,,,Apartment
+"241 Addison Road, Marrickville",Marrickville,2026-07-31,private treaty,1750000,3,2,2,196,House
+"2/2-6 Schwebel Street, Marrickville",Marrickville,2026-07-30,private treaty,1080000,2,1,1,,Apartment
+"60 Malakoff Street, Marrickville",Marrickville,2026-07-29,private treaty,2000000,3,2,1,177,House
+"16/1-5 Glen Street, Marrickville",Marrickville,2026-07-25,auction,1010000,2,1,1,79,Apartment
+"52 Illawarra Road, Marrickville",Marrickville,2026-07-25,auction,1735000,3,1,1,170,House
+"49 Juliett Street, Marrickville",Marrickville,2026-07-24,private treaty,1640000,2,1,,124,House
+"321/11-23 Gordon Street, Marrickville",Marrickville,2026-07-24,private treaty,1255000,2,2,1,,Apartment
+"13 Cowper Street, Marrickville",Marrickville,2026-07-24,private treaty,1755000,3,3,,,House
+"903/186C Victoria Road, Marrickville",Marrickville,2026-07-24,prior to auction,800000,1,1,,60,Apartment
+"115 Sydenham Road, Marrickville",Marrickville,2026-07-23,private treaty,1850000,4,1,2,366,House
+"73a Illawarra Road, Marrickville",Marrickville,2026-07-22,private treaty,2980000,4,3,,242,Semi-detached
+"528 Illawarra Road, Marrickville",Marrickville,2026-07-17,private treaty,1650000,3,1,,429,House
+"15 Gladstone Street, Marrickville",Marrickville,2026-07-17,prior to auction,1900000,2,1,1,195,House
+"185 Addison Road, Marrickville",Marrickville,2026-07-17,prior to auction,2000000,3,2,,158,House
+"2/346-348 Illawarra Road, Marrickville",Marrickville,2026-07-14,private treaty,653000,1,1,1,56,Apartment
+"11 Enfield Street, Marrickville",Marrickville,2026-07-08,auction,2290000,4,1,1,354,House
+"12A Dibble Avenue, Marrickville",Marrickville,2026-07-07,private treaty,2640000,4,3,2,213,House
+"16/295 Victoria Road, Marrickville",Marrickville,2026-07-07,private treaty,1040000,2,1,1,111,Apartment
+"11 Jocelyn Ave, Marrickville",Marrickville,2026-07-03,private treaty,1750000,2,1,,187,Semi-detached
+"703C/359 Illawarra Road, Marrickville",Marrickville,2026-07-03,private treaty,790000,1,1,1,75,Apartment
+"27/486-488 Illawarra Road, Marrickville",Marrickville,2026-07-02,auction,525000,1,1,,,Apartment
+"1/136 Livingstone Road, Marrickville",Marrickville,2026-07-02,prior to auction,1245000,2,1,1,88,Apartment
+"3/12 George Street, Marrickville",Marrickville,2026-07-01,prior to auction,880000,2,1,,56,Apartment
+"19 Day Street, Marrickville",Marrickville,2026-06-29,private treaty,2075000,3,2,,188,House
+"1/11 Bayley Street, Marrickville",Marrickville,2026-06-27,auction,650000,1,1,1,66,Apartment
+"6/177-181 Sydenham Road, Marrickville",Marrickville,2026-06-24,prior to auction,1125000,2,1,1,95,Apartment
+"12/80 Victoria Road, Marrickville",Marrickville,2026-06-19,private treaty,762500,0,1,,49,Studio
+"26 Edward Street, Bankstown",Bankstown,2026-08-06,auction,1398888,3,2,5,550,House
+"3/1-5 Marshall Street, Bankstown",Bankstown,2026-08-06,private treaty,620000,2,2,1,,Apartment
+"9/105 Meredith Street, Bankstown",Bankstown,2026-08-04,private treaty,650000,2,1,2,,Apartment
+"215 Wattle Street, Bankstown",Bankstown,2026-08-01,auction,1610000,5,2,2,486,House
+"306/25 Meredith Street, Bankstown",Bankstown,2026-07-31,private treaty,548000,1,1,1,,Apartment
+"1/192 Canterbury Road, Bankstown",Bankstown,2026-07-31,private treaty,920000,3,2,2,,Townhouse
+"6 Highland Avenue, Bankstown",Bankstown,2026-07-25,auction,1340000,4,2,2,554,House
+"5/38 Cairds Avenue, Bankstown",Bankstown,2026-07-25,auction,835000,3,2,2,,Apartment
+"9/59 Rickard Road, Bankstown",Bankstown,2026-07-23,private treaty,535000,2,2,1,94,Apartment
+"6/105 Meredith Street, Bankstown",Bankstown,2026-07-22,private treaty,607000,2,1,1,123,Apartment
+"9/2b Myrtle Road, Bankstown",Bankstown,2026-07-21,private treaty,530000,2,1,1,126,Apartment
+"305/465 Chapel Road, Bankstown",Bankstown,2026-07-20,private treaty,545000,2,1,1,,Apartment
+"15/6 Myrtle Road, Bankstown",Bankstown,2026-07-14,private treaty,590000,2,1,1,,Apartment
+"4 Irvine Street, Bankstown",Bankstown,2026-07-11,auction,1305000,3,1,4,448,House
+"10/1 Dudley Avenue, Bankstown",Bankstown,2026-07-10,private treaty,659000,2,1,2,,Apartment
+"907/16 Meredith Street, Bankstown",Bankstown,2026-07-10,private treaty,795000,3,2,3,194,Apartment
+"35/94 Meredith Street, Bankstown",Bankstown,2026-07-09,private treaty,560000,2,1,1,125,Apartment
+"226/351F Hume Highway, Bankstown",Bankstown,2026-07-08,private treaty,570000,2,2,1,,Apartment
+"4/42-44 Sir Joseph Banks Street, Bankstown",Bankstown,2026-07-07,private treaty,629000,2,1,1,,Apartment
+"24/7 Cross Street, Bankstown",Bankstown,2026-07-07,private treaty,500000,2,1,1,,Apartment
+"48/17-27 Rickard Road, Bankstown",Bankstown,2026-07-03,private treaty,560000,2,1,1,,Apartment
+"1102/196A Stacey Street, Bankstown",Bankstown,2026-07-03,private treaty,580666,2,2,1,,Apartment
+"19 Gail Place, Bankstown",Bankstown,2026-06-27,auction,1550000,4,2,4,562,House
+"12/8-10 Melanie Street, Bankstown",Bankstown,2026-06-23,private treaty,805000,3,2,2,123,Apartment
+"12 Gould Street, Bankstown",Bankstown,2026-06-20,auction,2115000,5,3,6,746,House
+"78 Northam Avenue, Bankstown",Bankstown,2026-06-20,auction,2220000,3,2,3,885,House
+"603/196a Stacey Street, Bankstown",Bankstown,2026-06-18,private treaty,565000,2,2,1,,Apartment
+"33/3-7 Fetherstone Street, Bankstown",Bankstown,2026-06-16,private treaty,400000,2,1,1,,Apartment
+"78 Gardenia Avenue, Bankstown",Bankstown,2026-06-15,private treaty,1950000,4,3,2,695,House
+"2/21 Myrtle Road, Bankstown",Bankstown,2026-06-15,private treaty,645000,2,1,2,,Apartment
+"35 Allum Street, Bankstown",Bankstown,2026-06-13,auction,1796000,3,2,3,758,House
+"11/45 Reynolds Avenue, Bankstown",Bankstown,2026-06-12,private treaty,630000,2,1,2,,Apartment
+"1/292 Stacey Street, Bankstown",Bankstown,2026-06-12,private treaty,640000,2,1,1,,Apartment
+"7/38 Marshall Street, Bankstown",Bankstown,2026-06-12,private treaty,637000,2,1,2,,Apartment
+"5/1-9 Rickard Road, Bankstown",Bankstown,2026-06-10,private treaty,650000,2,1,2,,Apartment
+"8/59 Spit Road, Mosman",Mosman,2026-05-21,prior to auction,750000,1,1,1,,Apartment
+"3/11 Central Avenue, Mosman",Mosman,2026-05-21,private treaty,1625000,2,1,,,Apartment
+"4G/732 Military Road, Mosman",Mosman,2026-05-21,auction,1220000,1,1,1,92,Apartment
+"14 Dalton Road, Mosman",Mosman,2026-05-20,private treaty,3700000,4,2,1,246,Semi-detached
+"32B/2 Brady Street, Mosman",Mosman,2026-05-19,private treaty,2000000,2,2,2,,Apartment
+"2/5 Belmont Road, Mosman",Mosman,2026-05-18,prior to auction,1925000,2,1,,,Apartment
+"27/102 Spit Road, Mosman",Mosman,2026-05-15,private treaty,765000,1,1,1,,Apartment
+"7/8 Earl Street, Mosman",Mosman,2026-05-15,private treaty,3000000,3,2,2,,Apartment
+"3/13 McLeod Street, Mosman",Mosman,2026-05-15,prior to auction,2080000,3,2,2,,Townhouse
+"4/20 Avenue Road, Mosman",Mosman,2026-05-14,prior to auction,1180000,2,1,,82,Apartment
+"33 Killarney Street, Mosman",Mosman,2026-05-14,auction,4165000,3,2,1,493,House
+"2/7 Badham Avenue, Mosman",Mosman,2026-05-13,private treaty,1265000,2,1,,,Apartment
+"8/2A Brady Street, Mosman",Mosman,2026-05-12,prior to auction,2225000,3,2,2,8882,Apartment
+"13/68 Bradleys Head Road, Mosman",Mosman,2026-05-12,private treaty,750000,1,1,,48,Apartment
+"6 Countess Street, Mosman",Mosman,2026-05-11,private treaty,3525000,3,2,1,378,House
+"22 Cowles Road, Mosman",Mosman,2026-05-05,prior to auction,5605000,4,2,1,616,House
+"Unit 3/3 Belmont Road, Mosman",Mosman,2026-05-04,private treaty,1900000,2,2,2,,Apartment
+"5 Euryalus Street, Mosman",Mosman,2026-05-01,private treaty,6400000,4,2,,647,House
+"41 Lang Street, Mosman",Mosman,2026-05-01,prior to auction,3350000,3,2,,,House
+"37 Dalton Road, Mosman",Mosman,2026-04-29,prior to auction,3450000,4,1,1,,House
+"24/27 Warringah Road, Mosman",Mosman,2026-04-23,private treaty,788000,1,1,1,,Apartment
+"4/19-21 Countess Street, Mosman",Mosman,2026-04-22,private treaty,3000000,3,3,2,,Townhouse
+"3 Glover Street, Mosman",Mosman,2026-04-20,prior to auction,5600000,5,2,1,515,House
+"9 The Crescent, Mosman",Mosman,2026-04-18,auction,5100000,5,3,,504,House
+"34 Somerset Street, Mosman",Mosman,2026-04-17,private treaty,5300000,4,2,2,557,House
+"11/1A Queen Street, Mosman",Mosman,2026-04-16,private treaty,1325000,2,1,1,,Apartment
+"9/237 Raglan Street, Mosman",Mosman,2026-04-16,private treaty,1500000,1,1,1,,Apartment
+"10 Calypso Avenue, Mosman",Mosman,2026-04-16,auction,2825000,2,1,1,,Semi-detached
+"161 Avenue Road, Mosman",Mosman,2026-04-16,auction,3760000,3,1,2,,House
+"6/16 Bardwell Road, Mosman",Mosman,2026-04-16,private treaty,1325000,2,2,1,,Apartment
+"8A Bickell Road, Mosman",Mosman,2026-04-15,private treaty,5050000,5,3,4,746,House
+"3/701 Military Road, Mosman",Mosman,2026-04-14,private treaty,2125000,3,2,3,,Townhouse
+"35/22 Mosman Street, Mosman",Mosman,2026-04-13,private treaty,835000,1,1,1,,Apartment
+"5/28 Rickard Avenue, Mosman",Mosman,2026-04-13,private treaty,1950000,3,2,1,,Apartment
+"19 Bray Street, Mosman",Mosman,2026-04-13,private treaty,4681000,5,2,3,461,House
+"18/174 Spit Road, Mosman",Mosman,2026-04-12,private treaty,1195000,2,1,1,,Apartment
+"130 Cowles Road, Mosman",Mosman,2026-04-11,auction,4200000,5,2,1,,House
+"14 Erith Street, Mosman",Mosman,2026-04-11,auction,5300000,4,3,1,613,House
+"3/102 Spit Road, Mosman",Mosman,2026-04-10,private treaty,800000,1,1,1,,Apartment
+"19/5 Parriwi Road, Mosman",Mosman,2026-04-10,private treaty,3000000,2,2,1,,Apartment
+"3/3 Millett Road, Mosman",Mosman,2026-04-09,private treaty,740000,1,1,,,Apartment
+"312/88 Vista Street, Mosman",Mosman,2026-04-08,private treaty,721000,1,1,,,Apartment
+"3/34 Upper Fairfax Road, Mosman",Mosman,2026-04-08,private treaty,1250000,2,1,,,Apartment
+"1/9 Hill Street, Marrickville",Marrickville,2026-06-19,private treaty,992500,2,1,1,,Apartment
+"13/236 Illawarra Road, Marrickville",Marrickville,2026-06-19,prior to auction,1075000,2,2,1,100,Apartment
+"94 Juliett Street, Marrickville",Marrickville,2026-06-18,prior to auction,2500000,4,2,1,158,House
+"205/326 Marrickville Road, Marrickville",Marrickville,2026-06-18,prior to auction,930000,1,1,1,87,Apartment
+"5/6-8 Esk Street, Marrickville",Marrickville,2026-06-18,prior to auction,870000,2,1,1,53,Apartment
+"42 Schwebel Street, Marrickville",Marrickville,2026-06-16,private treaty,1980000,4,1,,297,House
+"24 O'Hara Street, Marrickville",Marrickville,2026-06-13,auction,1925000,3,1,,190,House
+"41/12-22 Newington Road, Marrickville",Marrickville,2026-06-13,auction,1520000,3,2,2,,Townhouse
+"6 Excelsior Parade, Marrickville",Marrickville,2026-06-13,auction,3016000,4,3,1,518,House
+"27 Perry Street, Marrickville",Marrickville,2026-06-13,auction,2295000,4,2,,225,House
+"345 Enmore Road, Marrickville",Marrickville,2026-06-12,private treaty,1980000,4,2,,,House
+"17/88 Petersham Road, Marrickville",Marrickville,2026-06-12,prior to auction,1355000,2,2,1,124,Apartment
+"4/385 Marrickville Road, Marrickville",Marrickville,2026-06-10,auction,795000,2,1,1,,Apartment
+"14 O'Hara Street, Marrickville",Marrickville,2026-06-10,auction,2015000,3,1,,183,House
+"6/21 Glen Street, Marrickville",Marrickville,2026-06-10,auction,1235000,2,2,1,92,Apartment
+"52 Pile Street, Marrickville",Marrickville,2026-06-09,private treaty,2362000,3,2,2,429,House
+"270 Victoria Road, Marrickville",Marrickville,2026-06-06,auction,1650000,4,1,1,,House
+"8 Llewellyn Street, Marrickville",Marrickville,2026-06-05,prior to auction,1560000,2,1,,141,House
+"3 Edward Street, Marrickville",Marrickville,2026-06-05,private treaty,2200000,3,2,1,194,House
+"2 Darley Street, Marrickville",Marrickville,2026-06-04,private treaty,3100000,4,2,2,479,House
+"423/11-23 Gordon Street, Marrickville",Marrickville,2026-06-04,prior to auction,1275000,2,2,1,,Apartment
+"56 Wemyss Street, Marrickville",Marrickville,2026-06-01,private treaty,1820000,3,1,,227,House
+"516/186C Victoria Road, Marrickville",Marrickville,2026-05-30,auction,950000,1,1,1,79,Apartment
+"19 Newington Road, Marrickville",Marrickville,2026-05-30,prior to auction,1543000,2,1,,,House
+"42 George Street, Marrickville",Marrickville,2026-05-30,auction,3160000,4,1,4,600,House
+"8 Crawford Place, Marrickville",Marrickville,2026-05-29,private treaty,2100000,4,1,3,328,House
+"3/29 Riverside Crescent, Marrickville",Marrickville,2026-05-29,prior to auction,1270000,2,1,1,99,Apartment
+"171 Edgeware Road, Marrickville",Marrickville,2026-05-29,private treaty,1605000,2,1,,221,House
+"119/186C Victoria Road, Marrickville",Marrickville,2026-05-29,prior to auction,815000,1,1,,,Apartment
+"111 Warren Road, Marrickville",Marrickville,2026-05-27,private treaty,1950000,3,1,,,House
+"8/132 Wardell Road, Marrickville",Marrickville,2026-05-26,prior to auction,1408990,3,1,1,119,Townhouse
+"23/18 Cecilia Street, Marrickville",Marrickville,2026-05-25,private treaty,1169000,2,1,1,110,Apartment
+"16 Greenbank Street, Marrickville",Marrickville,2026-05-23,auction,2200000,2,2,2,303,House
+"25 William Street, Marrickville",Marrickville,2026-05-22,prior to auction,1830000,2,1,,177,House
+"100 Neville Street, Marrickville",Marrickville,2026-05-22,prior to auction,2905000,4,2,,411,House
+"3/26 Henson Street, Marrickville",Marrickville,2026-05-21,prior to auction,950000,2,1,1,,Apartment
+"146 Edinburgh Road, Marrickville",Marrickville,2026-05-19,private treaty,2320000,4,2,2,335,House
+"81 Petersham Road, Marrickville",Marrickville,2026-05-19,private treaty,2100000,4,2,2,208,House
+"6/29 Pine Street, Marrickville",Marrickville,2026-05-18,private treaty,590000,1,1,,44,Apartment
+"215/74 Restwell Street, Bankstown",Bankstown,2026-06-09,private treaty,700000,2,2,1,,Apartment
+"1 Braunbeck Street, Bankstown",Bankstown,2026-06-05,prior to auction,1800000,4,2,2,601,House
+"102/192 Stacey Street, Bankstown",Bankstown,2026-06-05,private treaty,640000,2,2,1,,Apartment
+"512/16-20 Meredith Street, Bankstown",Bankstown,2026-06-03,private treaty,605000,2,2,2,2479,Apartment
+"5/8-12 Hixson Street, Bankstown",Bankstown,2026-06-03,private treaty,575000,2,1,2,,Apartment
+"114/196B Stacey Street, Bankstown",Bankstown,2026-06-03,private treaty,438888,1,1,1,84,Apartment
+"10 Dutton Street, Bankstown",Bankstown,2026-05-30,auction,1857000,5,2,4,562,House
+"6/47 Cairds Avenue, Bankstown",Bankstown,2026-05-29,private treaty,779680,3,2,2,151,Apartment
+"185A William Street, Bankstown",Bankstown,2026-05-26,private treaty,1600000,5,2,3,967,House
+"32/16 West Terrace, Bankstown",Bankstown,2026-05-26,private treaty,455000,2,1,1,,House
+"1 Eldridge Road, Bankstown",Bankstown,2026-05-23,auction,1670000,7,4,3,461,House
+"1/8-10 Weigand Avenue, Bankstown",Bankstown,2026-05-22,private treaty,475000,2,1,2,114,Apartment
+"58/3-5 Fetherstone St, Bankstown",Bankstown,2026-05-21,private treaty,450000,2,1,1,,Apartment
+"21/146 Meredith Street, Bankstown",Bankstown,2026-05-20,private treaty,530000,2,2,1,,Apartment
+"505/6-8 Cross St, Bankstown",Bankstown,2026-05-19,private treaty,572000,2,2,1,,Apartment
+"10/1A Carmen Street, Bankstown",Bankstown,2026-05-18,private treaty,620000,2,1,1,,Apartment
+"106/61 Rickard Road, Bankstown",Bankstown,2026-05-15,private treaty,700000,2,2,1,,Apartment
+"36/27 Raymond Street, Bankstown",Bankstown,2026-05-14,private treaty,507000,2,1,1,110,Apartment
+"1/45 Jacobs Street, Bankstown",Bankstown,2026-05-12,private treaty,608000,2,1,1,,Apartment
+"39/22 Raymond Street, Bankstown",Bankstown,2026-05-12,private treaty,460000,2,1,1,,Apartment
+"1 Remi Street, Bankstown",Bankstown,2026-05-11,prior to auction,1550000,4,2,4,480,House
+"506/465 Chapel Road, Bankstown",Bankstown,2026-05-08,private treaty,570000,2,1,1,,Apartment
+"1/127 Chapel Road, Bankstown",Bankstown,2026-05-08,private treaty,540000,2,1,1,,Apartment
+"17/41-43 Northam Avenue, Bankstown",Bankstown,2026-05-07,private treaty,660000,2,1,1,,Apartment
+"404/19 Meredith Street, Bankstown",Bankstown,2026-05-07,private treaty,555000,1,1,1,,Apartment
+"6/6-10 Sir Joseph Banks Street, Bankstown",Bankstown,2026-05-06,private treaty,640000,2,1,2,,Apartment
+"78/7-9 Cross Street, Bankstown",Bankstown,2026-05-06,private treaty,510000,2,1,1,,Apartment
+"40/30 Raymond Street, Bankstown",Bankstown,2026-05-05,private treaty,735000,3,2,1,135,Apartment
+"6/24-28 Reynolds Avenue, Bankstown",Bankstown,2026-05-05,private treaty,680000,2,1,2,,Apartment
+"23/16 Dellwood Street, Bankstown",Bankstown,2026-05-05,private treaty,610000,2,1,1,2827,Apartment
+"1/188 Canterbury Road, Bankstown",Bankstown,2026-05-05,private treaty,875000,3,1,2,238,Townhouse
+"1003/192 Stacey Street, Bankstown",Bankstown,2026-05-04,private treaty,625000,2,2,1,,Apartment
+"7/36 Brandon Avenue, Bankstown",Bankstown,2026-05-04,auction,731000,2,1,1,,Apartment
+"18/24 Brandon Avenue, Bankstown",Bankstown,2026-05-04,private treaty,710000,2,1,2,,Apartment
+"16/145 Chapel Road, Bankstown",Bankstown,2026-05-04,private treaty,540000,2,1,1,,Apartment
+"23 & 25 Reynolds Avenue, Bankstown",Bankstown,2026-05-03,auction,2800000,6,2,2,1046,House
+"3/5-7 Carmen Street, Bankstown",Bankstown,2026-05-02,private treaty,585000,2,1,1,121,Apartment
+"2/8-10 Bardwell Road, Mosman",Mosman,2026-04-07,private treaty,1775000,3,2,2,,Apartment
+"28/182 Raglan Street, Mosman",Mosman,2026-04-04,prior to auction,1800000,2,1,1,,Apartment
+"4/36-40 Muston Street, Mosman",Mosman,2026-04-02,prior to auction,2200000,3,2,2,,Apartment
+"1/1 Hampden Street, Mosman",Mosman,2026-04-02,private treaty,1200000,2,1,,,Apartment
+"22/40 Raglan Street, Mosman",Mosman,2026-04-02,prior to auction,5025000,4,3,2,,Apartment
+"19/180 Raglan Street, Mosman",Mosman,2026-04-02,private treaty,815000,1,1,1,,Apartment
+"12/68 Bradleys Head Road, Mosman",Mosman,2026-04-02,prior to auction,1100000,2,1,,68,Apartment
+"38 Bond Street, Mosman",Mosman,2026-04-01,auction,2920000,3,1,1,233,House
+"3/1 Hampden Street, Mosman",Mosman,2026-04-01,private treaty,742000,1,1,,,Apartment
+"8/4 Mandolong Road, Mosman",Mosman,2026-04-01,auction,1405000,2,1,1,,Apartment
+"44 Musgrave Street, Mosman",Mosman,2026-03-31,private treaty,3388000,4,3,1,240,House
+"2/1C Avenue Road, Mosman",Mosman,2026-03-31,auction,4500000,3,2,2,,Duplex
+"17 Morella Road, Mosman",Mosman,2026-03-31,private treaty,23000000,4,3,2,961,House
+"27 Bardwell Road, Mosman",Mosman,2026-03-30,auction,3675000,4,2,1,259,House
+"2/732 Military Road, Mosman",Mosman,2026-03-27,private treaty,1050000,1,1,1,80,Apartment
+"8/238 Raglan Street, Mosman",Mosman,2026-03-27,auction,1828000,2,1,1,,Apartment
+"14 Illawarra Street, Mosman",Mosman,2026-03-27,auction,4635000,3,2,1,1107,House
+"1/21 Mcleod Street, Mosman",Mosman,2026-03-27,private treaty,1752000,3,1,,633,Apartment
+"34 Rickard Avenue, Mosman",Mosman,2026-03-27,private treaty,9000000,7,3,2,,House
+"8/32 Muston Street, Mosman",Mosman,2026-03-27,auction,1450000,2,1,1,,Apartment
+"10 Cyprian Street, Mosman",Mosman,2026-03-26,auction,8500000,4,3,2,559,House
+"6 Wolseley Road, Mosman",Mosman,2026-03-26,auction,6600000,4,2,2,436,House
+"3/41 Spofforth Street, Mosman",Mosman,2026-03-25,prior to auction,1200000,2,1,,,Apartment
+"26 David Street, Mosman",Mosman,2026-03-25,prior to auction,8750000,5,3,2,766,House
+"88 Shadforth Street, Mosman",Mosman,2026-03-24,private treaty,6850000,4,3,2,602,House
+"3/12 Earl Street, Mosman",Mosman,2026-03-21,prior to auction,2900000,3,2,2,,Townhouse
+"11 Cobbittee Street, Mosman",Mosman,2026-03-20,prior to auction,7325000,5,4,4,670,House
+"3 Ourimbah Road, Mosman",Mosman,2026-03-20,prior to auction,2900000,3,1,1,,House
+"2/28 Orlando Avenue, Mosman",Mosman,2026-03-20,private treaty,1504000,2,1,,,Apartment
+"29 Pearl Bay Avenue, Mosman",Mosman,2026-03-20,private treaty,7198000,4,3,3,,House
+"4/2 Musgrave Street, Mosman",Mosman,2026-03-20,prior to auction,2287500,2,1,,80,Apartment
+"1/46B Parriwi Road, Mosman",Mosman,2026-03-20,prior to auction,4350000,3,2,2,,Apartment
+"5/30 Hale Road, Mosman",Mosman,2026-03-20,prior to auction,1835000,2,1,1,185,Townhouse
+"2/8 Muston Street, Mosman",Mosman,2026-03-19,private treaty,1300000,2,1,1,,Apartment
+"13/560 Military Road, Mosman",Mosman,2026-03-19,private treaty,1037000,2,1,1,,Apartment
+"9/59 Prince Albert Street, Mosman",Mosman,2026-03-19,prior to auction,1465000,2,1,1,940,Apartment
+"125 Ourimbah Road, Mosman",Mosman,2026-03-19,private treaty,4750000,5,5,2,480,House
+"8A Prince Street, Mosman",Mosman,2026-03-18,prior to auction,3570000,4,3,2,258,House
+"2a Ryrie Street, Mosman",Mosman,2026-03-14,auction,3700000,3,2,3,493,House
+"4/67A Avenue Road, Mosman",Mosman,2026-03-13,private treaty,935000,2,1,,,Apartment
+"8 Pindari Avenue, Mosman",Mosman,2026-03-11,prior to auction,6320000,5,3,2,527,House
+"7/10 Raglan Street, Mosman",Mosman,2026-03-11,private treaty,710000,1,1,,,Apartment
+"5/51 Spit Road, Mosman",Mosman,2026-03-10,private treaty,1029000,2,1,,,Apartment
+"18 Melrose Street, Mosman",Mosman,2026-03-09,private treaty,5200000,6,3,2,532,House
+"2/8 Silex Road, Mosman",Mosman,2026-03-07,auction,2250000,2,2,1,,Apartment
+"31 Ryrie Street, Mosman",Mosman,2026-03-07,auction,3900000,5,3,2,624,House
+"16/182 Raglan Street, Mosman",Mosman,2026-03-07,auction,1610000,2,1,1,,Apartment
+"1/105-107 Cowles Road, Mosman",Mosman,2026-03-07,auction,2260000,3,2,2,,Townhouse
+"6/39 Stanton Road, Mosman",Mosman,2026-03-07,auction,1360000,2,1,1,1546,Apartment
+"8/1 Queen Street, Mosman",Mosman,2026-03-07,private treaty,1670000,2,1,1,,Apartment
+"53 Clanalpine Street, Mosman",Mosman,2026-03-06,private treaty,7700000,5,5,4,511,House
+"32 Lang Street, Mosman",Mosman,2026-03-06,prior to auction,3900000,5,2,2,493,House
+"1/21 Park Avenue, Mosman",Mosman,2026-03-06,prior to auction,1180000,2,1,,,Apartment
+"1/8 Muston Street, Mosman",Mosman,2026-03-06,private treaty,1300000,2,1,1,,Apartment
+"17/6 Clifford Street, Mosman",Mosman,2026-03-05,private treaty,670000,1,1,,,Apartment
+"55 Wolseley Road, Mosman",Mosman,2026-03-05,private treaty,7430000,4,3,4,771,House
+"14 Kirkoswald Avenue, Mosman",Mosman,2026-03-05,prior to auction,8510000,5,3,2,556,House
+"19 Wyong Road, Mosman",Mosman,2026-03-04,prior to auction,8085000,4,3,1,999,House
+"9/1A Queen Street, Mosman",Mosman,2026-03-03,private treaty,1500000,2,1,2,,Apartment
+"51 Prince Street, Mosman",Mosman,2026-03-02,prior to auction,6600000,5,4,2,,House
+"2/9-11 Park Avenue, Mosman",Mosman,2026-03-02,prior to auction,3300000,4,2,2,,Townhouse
+"28 David Street, Mosman",Mosman,2026-03-02,private treaty,17150000,5,5,3,1150,House
+"33 Spofforth Street, Mosman",Mosman,2026-03-02,private treaty,5075000,4,3,3,,House
+"3/15 Mosman Street, Mosman",Mosman,2026-03-01,private treaty,2755000,3,2,2,,Apartment
+"9/48 Middle Head Road, Mosman",Mosman,2026-02-28,auction,862000,1,1,1,,Apartment
+"15/5 The Esplanade, Mosman",Mosman,2026-02-28,auction,1950000,2,1,1,,Apartment
+"3/46A Moruben Road, Mosman",Mosman,2026-02-27,prior to auction,2030800,2,1,1,,Apartment
+"5/53 Prince Albert Street, Mosman",Mosman,2026-02-27,private treaty,2400000,3,2,1,,Apartment
+"42 Prince Street, Mosman",Mosman,2026-02-27,private treaty,5000000,4,2,2,,House
+"1 Bray Street, Mosman",Mosman,2026-02-27,prior to auction,3750000,3,2,1,296,House
+"310/55 Harbour Street, Mosman",Mosman,2026-02-27,prior to auction,1065000,1,1,1,,Apartment
+"1/96 Ourimbah Road, Mosman",Mosman,2026-02-27,prior to auction,912000,2,1,,2003,Apartment
+"21A Noble Street, Mosman",Mosman,2026-02-26,prior to auction,5100000,4,3,3,887,House
+"18 Esther Road, Mosman",Mosman,2026-02-26,private treaty,14500000,4,3,4,,House
+"11/27 Somerset Street, Mosman",Mosman,2026-02-26,private treaty,695000,1,1,1,,Apartment
+"406/88 Vista Street, Mosman",Mosman,2026-02-26,private treaty,875000,1,1,1,,Apartment
+"16 Lower Boyle Street, Mosman",Mosman,2026-02-25,prior to auction,12700000,5,3,4,619,House
+"2/23 Park Avenue, Mosman",Mosman,2026-02-20,prior to auction,3550000,3,2,2,,Semi-detached
+"17/98 Ourimbah Road, Mosman",Mosman,2026-02-20,prior to auction,1125000,2,1,1,,Apartment
+"13/56 Harbour Street, Mosman",Mosman,2026-02-20,prior to auction,1150000,1,1,1,1031,Apartment
+"3/70-72 Muston Street, Mosman",Mosman,2026-02-19,prior to auction,4100000,3,2,2,321,Apartment
+"1/41 The Esplanade, Mosman",Mosman,2026-02-19,prior to auction,5000000,3,2,1,,Apartment
+"20A Cobbittee Street, Mosman",Mosman,2026-02-19,prior to auction,13200000,4,4,3,,House
+"4/70 Bradleys Head Road, Mosman",Mosman,2026-02-19,prior to auction,3750000,3,2,2,,Apartment
+"16/22 Mosman Street, Mosman",Mosman,2026-02-19,private treaty,820000,1,1,1,,Apartment
+"2/36 Upper Fairfax Road, Mosman",Mosman,2026-02-19,prior to auction,4275000,4,2,3,372,Apartment
+"1D/74 Prince Street, Mosman",Mosman,2026-02-18,private treaty,1000000,2,1,1,,Apartment
+"205/100 Glover Street, Mosman",Mosman,2026-02-18,private treaty,2550000,3,2,2,,Apartment
+"42/36A Park Avenue, Mosman",Mosman,2026-02-17,prior to auction,1300000,2,1,1,83,Apartment
+"424 Marrickville Road, Marrickville",Marrickville,2026-05-16,auction,2875000,4,2,2,519,House
+"17/68-70 Illawarra Road, Marrickville",Marrickville,2026-05-15,prior to auction,1225000,3,1,1,,Apartment
+"315/11-23 Gordon Street, Marrickville",Marrickville,2026-05-14,private treaty,875000,1,1,1,,Apartment
+"3/358 Livingstone Road, Marrickville",Marrickville,2026-05-14,prior to auction,960000,2,1,1,78,Apartment
+"34 Hollands Avenue, Marrickville",Marrickville,2026-05-14,private treaty,1710000,2,1,,,House
+"19 Black Street, Marrickville",Marrickville,2026-05-13,auction,2820000,4,2,2,328,House
+"32/198-204 Marrickville Road, Marrickville",Marrickville,2026-05-13,auction,837500,1,1,1,,Apartment
+"20 Porter Avenue, Marrickville",Marrickville,2026-05-12,prior to auction,3550000,3,1,2,556,House
+"6/32-38 Hill Street, Marrickville",Marrickville,2026-05-12,prior to auction,695000,1,1,1,,Apartment
+"91 Meeks Road, Marrickville",Marrickville,2026-05-12,private treaty,1800000,4,1,1,220,House
+"2/10 View Street, Marrickville",Marrickville,2026-05-11,prior to auction,975000,2,1,2,96,Apartment
+"25 Francis Street, Marrickville",Marrickville,2026-05-09,auction,1700000,2,1,,227,House
+"22/387-393 Marrickville Road, Marrickville",Marrickville,2026-05-09,auction,760000,1,1,1,65,Apartment
+"C701/359 Illawarra Road, Marrickville",Marrickville,2026-05-08,auction,725000,1,1,1,6084,Apartment
+"8/15 George Street, Marrickville",Marrickville,2026-05-08,prior to auction,980000,2,1,1,91,Apartment
+"16 South Street, Marrickville",Marrickville,2026-05-07,private treaty,3020000,4,2,4,486,House
+"9 Charles Street, Marrickville",Marrickville,2026-05-07,private treaty,2380000,3,1,1,399,House
+"C501/359 Illawarra Road, Marrickville",Marrickville,2026-05-06,prior to auction,705100,1,1,1,,Apartment
+"6/37-41 Harnett Avenue, Marrickville",Marrickville,2026-05-06,private treaty,730000,1,1,1,62,Apartment
+"19 Queen Street, Marrickville",Marrickville,2026-05-05,private treaty,1800000,2,1,1,,House
+"9/93-95 Warren Road, Marrickville",Marrickville,2026-05-05,prior to auction,1070000,2,1,1,,Apartment
+"26/256 Wardell Road, Marrickville",Marrickville,2026-05-04,prior to auction,1365000,2,1,1,,Apartment
+"6/18 Cecilia Street, Marrickville",Marrickville,2026-05-04,prior to auction,1200000,2,1,1,,Apartment
+"209/178 Livingstone Road, Marrickville",Marrickville,2026-05-04,private treaty,2270000,3,2,2,,Apartment
+"14 Ivanhoe Street, Marrickville",Marrickville,2026-05-01,prior to auction,1870000,2,1,,269,House
+"27/11 Hill Street, Marrickville",Marrickville,2026-05-01,prior to auction,1260000,3,1,2,106,Apartment
+"27/85 Beauchamp Street, Marrickville",Marrickville,2026-04-28,private treaty,545000,1,1,,,Apartment
+"82 Juliett Street, Marrickville",Marrickville,2026-04-27,auction,3310000,3,2,1,208,House
+"4/476 Illawarra Road, Marrickville",Marrickville,2026-04-27,private treaty,550000,1,1,,,Apartment
+"9/1-3 Arthur Street, Marrickville",Marrickville,2026-04-25,private treaty,930000,2,1,1,1671,Apartment
+"12 Dibble Avenue, Marrickville",Marrickville,2026-04-24,private treaty,2675000,4,3,,209,House
+"18/3 Hill Street, Marrickville",Marrickville,2026-04-24,auction,980000,2,1,1,,Apartment
+"6/10 View Street, Marrickville",Marrickville,2026-04-23,prior to auction,975000,2,1,2,96,Apartment
+"229 Victoria Road, Marrickville",Marrickville,2026-04-23,auction,1800000,2,2,1,183,House
+"5 William Street, Marrickville",Marrickville,2026-04-22,prior to auction,2555000,3,1,,335,House
+"125 Addison Road, Marrickville",Marrickville,2026-04-22,auction,2050000,3,1,,221,House
+"18/387-393 Marrickville Road, Marrickville",Marrickville,2026-04-21,prior to auction,1210000,2,1,1,102,Apartment
+"70 Silver Street, Marrickville",Marrickville,2026-04-19,private treaty,1925000,3,1,,,House
+"3/51A Woodcourt Street, Marrickville",Marrickville,2026-04-18,auction,1100000,2,1,,,Apartment
+"133/186E Victoria Road, Marrickville",Marrickville,2026-04-17,private treaty,1420000,2,2,1,,Apartment
+"24 Gladstone Street, Marrickville",Marrickville,2026-04-15,auction,2000000,2,1,1,196,House
+"5/58 Warren Road, Marrickville",Marrickville,2026-04-15,prior to auction,870000,2,1,1,,Apartment
+"12/18A Ewart Street, Marrickville",Marrickville,2026-04-15,auction,846000,2,1,1,,Apartment
+"21 Bourne Street, Marrickville",Marrickville,2026-04-14,prior to auction,2910000,4,1,2,442,House
+"417/186C Victoria Road, Marrickville",Marrickville,2026-04-14,auction,835000,1,1,,,Apartment
+"43 Pine Street, Marrickville",Marrickville,2026-04-11,auction,2120000,3,1,1,,House
+"94a Beauchamp Street, Marrickville",Marrickville,2026-04-11,private treaty,2600000,3,2,1,335,House
+"17 Lilydale Street, Marrickville",Marrickville,2026-04-10,prior to auction,2000000,2,1,,252,House
+"8/3 Council Street, Marrickville",Marrickville,2026-04-10,private treaty,517500,1,1,,,Apartment
+"35 Wharf Street, Marrickville",Marrickville,2026-04-09,private treaty,2100000,2,1,1,404,House
+"415/186C Victoria Rd, Marrickville",Marrickville,2026-04-09,prior to auction,980000,1,1,1,,Apartment
+"53/198-204 Marrickville Road, Marrickville",Marrickville,2026-04-08,prior to auction,1110000,2,2,1,,Apartment
+"13/525 Illawarra Rd, Marrickville",Marrickville,2026-04-07,private treaty,785000,1,1,1,,Apartment
+"104/27 George Street, Marrickville",Marrickville,2026-04-02,private treaty,1650000,2,2,1,127,Apartment
+"2/31 Woodcourt Street, Marrickville",Marrickville,2026-04-02,private treaty,860000,2,1,1,,Apartment
+"2/167 Livingstone Road, Marrickville",Marrickville,2026-04-01,auction,1100000,2,1,1,,Apartment
+"33/256 Wardell Road, Marrickville",Marrickville,2026-03-29,auction,1426000,2,1,1,127,Apartment
+"40 Pine Street, Marrickville",Marrickville,2026-03-28,auction,4300000,6,3,1,708,House
+"2/151 Illawarra Road, Marrickville",Marrickville,2026-03-28,auction,1730000,3,3,2,207,Townhouse
+"1/32 Pine Street, Marrickville",Marrickville,2026-03-27,prior to auction,2951000,3,2,1,313,House
+"31/342a Marrickville Road, Marrickville",Marrickville,2026-03-26,prior to auction,1700000,3,2,1,150,Apartment
+"19 Malakoff Street, Marrickville",Marrickville,2026-03-25,prior to auction,2075000,3,2,,185,House
+"1/342A Marrickville Road, Marrickville",Marrickville,2026-03-23,prior to auction,1250000,2,2,1,129,Apartment
+"292 Enmore Road, Marrickville",Marrickville,2026-03-21,auction,1995000,3,1,,183,House
+"8/236 Illawarra Road, Marrickville",Marrickville,2026-03-21,auction,1060000,2,2,1,103,Apartment
+"17/177-181 Sydenham Road, Marrickville",Marrickville,2026-03-20,private treaty,980000,2,1,1,,Apartment
+"11/1-3 Arthur Street, Marrickville",Marrickville,2026-03-20,prior to auction,970000,2,1,1,89,Apartment
+"303/1-13 Garners Avenue, Marrickville",Marrickville,2026-03-19,auction,1400000,2,2,1,135,Apartment
+"9/3-5 School Parade, Marrickville",Marrickville,2026-03-19,auction,860000,2,1,1,91,Apartment
+"18/10 View Street, Marrickville",Marrickville,2026-03-17,auction,802500,1,1,1,68,Apartment
+"189 Livingstone Road, Marrickville",Marrickville,2026-03-17,prior to auction,2770000,3,3,2,252,House
+"4/2-8 Henson Street, Marrickville",Marrickville,2026-03-14,prior to auction,1040000,2,1,1,,Apartment
+"3/13 Hastings Street, Marrickville",Marrickville,2026-03-13,private treaty,800000,1,1,,72,Apartment
+"1 Edward Street, Marrickville",Marrickville,2026-03-13,private treaty,2110000,3,1,1,190,House
+"3/63 Warren Road, Marrickville",Marrickville,2026-03-13,prior to auction,1160000,2,1,,117,Apartment
+"1 Park Road, Marrickville",Marrickville,2026-03-13,prior to auction,3100000,3,2,2,373,House
+"9 Woodcourt Street, Marrickville",Marrickville,2026-03-13,private treaty,2900000,3,2,1,392,House
+"52 Malakoff Street, Marrickville",Marrickville,2026-03-12,private treaty,2050000,3,1,1,183,House
+"713/186D Victoria Road, Marrickville",Marrickville,2026-03-11,private treaty,1070000,1,1,1,84,Apartment
+"331A Livingstone Road, Marrickville",Marrickville,2026-03-10,prior to auction,2450000,2,1,1,385,House
+"21/486-488 Illawarra Road, Marrickville",Marrickville,2026-03-07,auction,820000,2,1,1,75,Apartment
+"5 Edward Street, Marrickville",Marrickville,2026-03-07,private treaty,1890000,2,1,1,207,House
+"7/324b Marrickville Road, Marrickville",Marrickville,2026-03-07,auction,770000,1,1,1,,Apartment
+"330 Illawarra Road, Marrickville",Marrickville,2026-03-06,private treaty,1800000,3,1,1,,House
+"1 Amy Street, Marrickville",Marrickville,2026-03-05,private treaty,2140000,2,1,,208,House
+"76 Neville Street, Marrickville",Marrickville,2026-03-05,auction,2300000,3,1,2,259,House
+"238 Sydenham Road, Marrickville",Marrickville,2026-03-04,private treaty,2175000,2,2,1,252,House
+"12 Garners Avenue, Marrickville",Marrickville,2026-03-04,prior to auction,2525000,3,2,,164,House
+"21/85 Beauchamp Street, Marrickville",Marrickville,2026-03-03,private treaty,540000,1,1,,,Apartment
+"32/254 Wardell Road, Marrickville",Marrickville,2026-03-03,prior to auction,880000,1,1,1,,Apartment
+"81 Edinburgh Road, Marrickville",Marrickville,2026-02-28,auction,2500000,4,2,3,417,House
+"29 Roseby Street, Marrickville",Marrickville,2026-02-28,auction,2150000,3,2,1,246,House
+"402/11-23 Gordon Street, Marrickville",Marrickville,2026-02-27,private treaty,1750000,3,2,2,,Apartment
+"3/2-4 Glen Street, Marrickville",Marrickville,2026-02-26,prior to auction,1217000,2,1,1,112,Apartment
+"601/18 Lilydale Street, Marrickville",Marrickville,2026-02-26,private treaty,1578000,2,2,1,103,Apartment
+"3/61 Neville Street, Marrickville",Marrickville,2026-02-26,prior to auction,1440000,1,1,1,156,Townhouse
+"16 Calvert Street, Marrickville",Marrickville,2026-02-25,auction,2150000,4,2,1,253,House
+"17/513 Chapel Road, Bankstown",Bankstown,2026-05-02,private treaty,622000,2,1,1,111,Apartment
+"601/192 Stacey Street, Bankstown",Bankstown,2026-05-01,private treaty,620000,2,2,1,,Apartment
+"102/10 French Avenue, Bankstown",Bankstown,2026-04-23,private treaty,630000,2,2,1,,Apartment
+"313/196B Stacey Street, Bankstown",Bankstown,2026-04-23,private treaty,500000,2,2,1,116,Apartment
+"66/35 Stanley Street, Bankstown",Bankstown,2026-04-20,private treaty,645000,2,1,1,,Apartment
+"7/128 Meredith Street, Bankstown",Bankstown,2026-04-18,private treaty,828888,3,2,2,212,Townhouse
+"1/178 Greenacre Road, Bankstown",Bankstown,2026-04-18,auction,1005000,3,1,3,235,Townhouse
+"5/131-133 Meredith Street, Bankstown",Bankstown,2026-04-17,private treaty,615000,2,1,2,,Apartment
+"305/5 French Avenue, Bankstown",Bankstown,2026-04-17,private treaty,680000,2,2,1,,Apartment
+"1012/21 Meredith Street, Bankstown",Bankstown,2026-04-17,private treaty,730000,2,1,1,98,Apartment
+"7/3 Fetherstone Street, Bankstown",Bankstown,2026-04-14,private treaty,399888,2,1,1,,Apartment
+"2/166 Greenacre Road, Bankstown",Bankstown,2026-04-13,private treaty,495000,2,1,1,,Apartment
+"26/1 Marshall Street, Bankstown",Bankstown,2026-04-13,private treaty,600000,2,2,1,,Apartment
+"13/7 Shenton Avenue, Bankstown",Bankstown,2026-04-13,private treaty,735000,2,1,1,,Apartment
+"42/2 French Avenue, Bankstown",Bankstown,2026-04-13,private treaty,480000,2,1,1,,Apartment
+"605/6-8 Cross Street, Bankstown",Bankstown,2026-04-12,auction,512000,2,2,1,93,Apartment
+"209/74 Restwell Street, Bankstown",Bankstown,2026-04-11,private treaty,630000,2,2,1,,Apartment
+"7/180 Chapel Road South, Bankstown",Bankstown,2026-04-11,auction,863000,4,2,2,206,Apartment
+"B407/4-6 French Avenue, Bankstown",Bankstown,2026-04-08,private treaty,646000,2,2,1,121,Apartment
+"705/192-194 Stacey Street, Bankstown",Bankstown,2026-04-06,private treaty,610000,2,2,1,102,Apartment
+"207/5 French Avenue, Bankstown",Bankstown,2026-04-02,private treaty,635000,2,2,1,,Apartment
+"5/61-65 Cairds Avenue, Bankstown",Bankstown,2026-04-02,private treaty,715000,2,1,2,196,Apartment
+"52/4 West Terrace, Bankstown",Bankstown,2026-03-31,private treaty,650000,2,2,2,1950,Apartment
+"905/192 Stacey Street, Bankstown",Bankstown,2026-03-30,private treaty,635000,2,2,1,,Apartment
+"17/54-56 Sir Joseph Banks Street, Bankstown",Bankstown,2026-03-30,private treaty,695000,3,1,2,,Apartment
+"29 Edward Street, Bankstown",Bankstown,2026-03-30,auction,1572000,3,1,7,670,House
+"5/274 Stacey Street, Bankstown",Bankstown,2026-03-29,private treaty,593000,2,1,1,101,Apartment
+"29 Oxford Avenue, Bankstown",Bankstown,2026-03-28,private treaty,1830000,6,4,3,771,House
+"6 Noumea Avenue, Bankstown",Bankstown,2026-03-28,auction,1490000,3,1,2,607,House
+"3/34 Prairie Vale Road, Bankstown",Bankstown,2026-03-28,auction,845000,2,2,2,181,Townhouse
+"146 Northam Avenue, Bankstown",Bankstown,2026-03-28,auction,1945000,5,2,2,626,House
+"A703/4-6 French Ave, Bankstown",Bankstown,2026-03-27,private treaty,520000,1,1,1,,Apartment
+"21/24 Sir Joseph Banks Street, Bankstown",Bankstown,2026-03-27,private treaty,580000,2,1,1,97,Apartment
+"2/9 De Witt Street, Bankstown",Bankstown,2026-03-27,private treaty,930000,3,2,1,,Townhouse
+"23/22 Raymond Street, Bankstown",Bankstown,2026-03-27,auction,465000,2,1,1,91,Apartment
+"503/61-63 Rickard Road, Bankstown",Bankstown,2026-03-27,private treaty,820000,3,2,2,,Apartment
+"17/7 Cross Street, Bankstown",Bankstown,2026-03-27,private treaty,645500,3,2,1,124,Apartment
+"13/168 Mimosa Road, Bankstown",Bankstown,2026-03-26,private treaty,1035000,3,1,2,302,Townhouse
+"5/94 The Avenue, Bankstown",Bankstown,2026-03-26,private treaty,970000,3,2,2,233,Townhouse
+"5/55 Reynolds Avenue, Bankstown",Bankstown,2026-03-26,private treaty,600000,2,1,1,125,Apartment
+"29/513 Chapel Road, Bankstown",Bankstown,2026-03-24,private treaty,640000,2,1,1,111,Apartment
+"302/21-25 Leonard Street, Bankstown",Bankstown,2026-03-24,private treaty,660000,2,2,1,,Apartment
+"13/8 Weigand Avenue, Bankstown",Bankstown,2026-03-24,private treaty,605000,2,1,1,,Apartment
+"6 Heath Street, Bankstown",Bankstown,2026-03-23,auction,1800000,3,1,2,543,House
+"126 South Terrace, Bankstown",Bankstown,2026-03-21,auction,1631000,3,2,3,663,House
+"2 Irvine Street, Bankstown",Bankstown,2026-03-21,auction,1321000,3,1,1,455,House
+"28/125 Meredith Street, Bankstown",Bankstown,2026-03-19,private treaty,570000,2,1,1,,Apartment
+"15 Gail Place, Bankstown",Bankstown,2026-03-18,private treaty,1862500,7,2,4,619,House
+"21/34-36 Weigand Avenue, Bankstown",Bankstown,2026-03-18,private treaty,710000,2,1,2,150,Apartment
+"61 Cambridge Avenue, Bankstown",Bankstown,2026-03-17,private treaty,1605000,4,2,2,274,Semi-detached
+"12/17 Shenton Avenue, Bankstown",Bankstown,2026-03-17,private treaty,600000,2,1,1,1919,Apartment
+"12/18-20 Gordon Street, Bankstown",Bankstown,2026-03-16,private treaty,565000,2,1,1,,Apartment
+"20/274 Stacey Street, Bankstown",Bankstown,2026-03-11,private treaty,633000,2,1,2,124,Apartment
+"A504/4-6 French Avenue, Bankstown",Bankstown,2026-03-10,private treaty,625000,2,2,1,,Apartment
+"612/16-20 Meredith Street, Bankstown",Bankstown,2026-03-10,private treaty,605000,2,2,2,,Apartment
+"81 Griffiths Avenue, Bankstown",Bankstown,2026-03-07,auction,2050000,4,3,2,670,House
+"91 Griffiths Avenue, Bankstown",Bankstown,2026-03-07,auction,1791000,4,3,4,575,House
+"30/22 Raymond Street, Bankstown",Bankstown,2026-03-06,private treaty,480000,2,1,1,91,Apartment
+"18/1 Carmen Street, Bankstown",Bankstown,2026-03-05,private treaty,615000,2,1,1,107,Apartment
+"4/85 Cairds Avenue, Bankstown",Bankstown,2026-03-04,private treaty,500000,2,1,,,Apartment
+"22/21-23 Myrtle Road, Bankstown",Bankstown,2026-03-04,private treaty,614950,2,1,1,,Apartment
+"910/38 Kitchener Parade, Bankstown",Bankstown,2026-03-03,private treaty,580000,1,1,1,,Apartment
+"27/5 Dellwood Street, Bankstown",Bankstown,2026-02-28,auction,640000,2,1,1,,Apartment
+"18 Percy Street, Bankstown",Bankstown,2026-02-28,auction,2750000,3,2,4,1104,House
+"2/30-34 Brandon Avenue, Bankstown",Bankstown,2026-02-27,private treaty,670000,2,1,2,112,Apartment
+"27/274 Stacey Street, Bankstown",Bankstown,2026-02-26,private treaty,535000,2,1,2,110,Apartment
+"1304/192-194 Stacey Street, Bankstown",Bankstown,2026-02-26,private treaty,489000,1,1,1,80,Apartment
+"156 Chapel Road, Bankstown",Bankstown,2026-02-21,auction,1630000,7,3,,476,House
+"4 Hoskins Avenue, Bankstown",Bankstown,2026-02-21,auction,2100000,9,4,4,670,House
+"1002/192 Stacey Street, Bankstown",Bankstown,2026-02-20,private treaty,470000,1,1,1,,Apartment
+"13/31 Myrtle Road, Bankstown",Bankstown,2026-02-20,private treaty,650000,2,1,1,,Apartment
+"59/7-9 Cross Street, Bankstown",Bankstown,2026-02-19,private treaty,508888,2,1,1,138,Apartment
+"19/73 Reynolds Avenue, Bankstown",Bankstown,2026-02-18,private treaty,660000,2,1,2,148,Apartment
+"29/6-10 Sir Joseph Banks Street, Bankstown",Bankstown,2026-02-17,private treaty,670000,2,1,2,131,Apartment
+"37/22 Raymond Street, Bankstown",Bankstown,2026-02-16,private treaty,440000,2,1,1,,House
+"7/7 Dudley Avenue, Bankstown",Bankstown,2026-02-14,private treaty,635000,2,1,2,,Apartment
+"17/75 Cairds Avenue, Bankstown",Bankstown,2026-02-13,private treaty,600000,2,1,1,,Apartment
+"165B William Street, Bankstown",Bankstown,2026-02-13,private treaty,1250000,3,2,2,303,Semi-detached
+"604/19 Meredith Street, Bankstown",Bankstown,2026-02-13,private treaty,488000,1,1,,,Apartment
+"G03/6-8 Cross Street, Bankstown",Bankstown,2026-02-11,private treaty,640000,2,2,1,,Apartment
+"2/38-42 Meredith Street, Bankstown",Bankstown,2026-02-09,private treaty,580000,2,2,1,,Apartment
+"45/3 Fetherstone St, Bankstown",Bankstown,2026-02-09,private treaty,405000,2,1,1,,Apartment
+"14/34 Weigand Avenue, Bankstown",Bankstown,2026-02-05,private treaty,660000,2,1,2,,Apartment
+"10/17-27 Rickard Road, Bankstown",Bankstown,2026-02-02,private treaty,556000,2,1,1,,Apartment
+"45 Allum Street, Bankstown",Bankstown,2026-01-31,auction,1892000,4,2,5,562,House
+"65 Conway Road, Bankstown",Bankstown,2026-01-31,auction,1460000,3,2,3,505,House
+"218/351E Hume Highway, Bankstown",Bankstown,2026-01-30,private treaty,515000,2,2,1,,Apartment
+"140A South Terrace, Bankstown",Bankstown,2026-01-29,private treaty,1300000,3,3,2,355,House
+"36 Salvia Avenue, Bankstown",Bankstown,2026-01-28,private treaty,2300000,4,3,4,1056,House
+"12/4-8 Gordon Street, Bankstown",Bankstown,2026-01-27,private treaty,620000,2,1,2,,Apartment
+"4/274 Stacey Street, Bankstown",Bankstown,2026-01-23,private treaty,525000,2,1,1,,Apartment
+"5/1-5 Marshall Street, Bankstown",Bankstown,2026-01-23,private treaty,650000,2,1,1,,Apartment
+"314/351E Hume Highway, Bankstown",Bankstown,2026-01-22,private treaty,515000,2,2,1,,Apartment
+"227/351F Hume Highway, Bankstown",Bankstown,2026-01-19,private treaty,585000,2,2,1,,Apartment
+"4B Daphne Avenue, Bankstown",Bankstown,2026-01-16,private treaty,1910000,5,4,2,348,Duplex
+"10/145 Chapel Road, Bankstown",Bankstown,2026-01-16,private treaty,380000,1,1,1,,Apartment
+"24 Saurine Street, Bankstown",Bankstown,2026-01-14,private treaty,2000000,4,2,6,904,House
+"4/4-8 Cambridge Avenue, Bankstown",Bankstown,2026-01-14,private treaty,766000,3,1,2,,Apartment

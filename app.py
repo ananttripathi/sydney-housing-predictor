@@ -1,6 +1,6 @@
 """
 8D Distinction Task -- Sydney Housing Price Prediction and Decision Support System
-Streamlit app: loads the trained pipeline (gb_price_pipeline.joblib) produced by the
+Streamlit app: loads the trained pipeline (price_pipeline.joblib) produced by the
 project notebook and returns a predicted sale price for user-entered property features.
 
 Run with:  streamlit run app.py
@@ -63,7 +63,7 @@ st.markdown("""
 
 @st.cache_resource
 def load_pipeline():
-    return joblib.load("gb_price_pipeline.joblib")
+    return joblib.load("price_pipeline.joblib")
 
 
 @st.cache_data
@@ -97,7 +97,7 @@ def compact_price(value: float) -> str:
 st.markdown("""
 <div class="hero">
     <h1>🏠 Sydney Housing Price Predictor</h1>
-    <p>Decision-support prototype &middot; 8D Distinction Task &middot; trained on 222 real sold properties
+    <p>Decision-support prototype &middot; 8D Distinction Task &middot; trained on 506 real sold properties
     across Mosman, Marrickville and Bankstown (Domain.com.au, 2026)</p>
 </div>
 """, unsafe_allow_html=True)
@@ -188,7 +188,7 @@ with tab_predict:
             st.plotly_chart(fig, width="stretch", theme=None)
 
             st.info(
-                "⚠️ This is a statistical estimate from a modest (222-property) training sample, "
+                "⚠️ This is a statistical estimate from a modest (506-property) training sample, "
                 "not a professional valuation. It is least reliable for atypical properties "
                 "(unusually large/small land, missing land size, or features outside the training "
                 "range) -- see Part 4 of the accompanying report for where predictions should be "
@@ -206,9 +206,9 @@ with tab_predict:
 with tab_about:
     st.subheader("About this model")
     st.write(
-        "Trained on 222 real sold properties collected from Domain.com.au's sold-listings search "
-        "(Mosman, Marrickville, Bankstown; August 2026 snapshot). Model: **Gradient Boosting Regressor** "
-        "on log(price), selected ahead of Ridge Regression and Random Forest based on 5-fold "
+        "Trained on 506 real sold properties collected from Domain.com.au's sold-listings search "
+        "(Mosman, Marrickville, Bankstown; August 2026 snapshot). Model: **Random Forest Regressor** "
+        "on log(price), selected ahead of Ridge Regression and Gradient Boosting based on 5-fold "
         "cross-validated MAE, RMSE, MAPE and R² -- see Part 3 of the accompanying report."
     )
     display_context = suburb_context.rename(columns={"median": "Median", "min": "Min", "max": "Max"}).copy()

@@ -1,85 +1,83 @@
-# Sydney Housing Price Prediction and Decision Support System
+# Sydney Housing Price Predictor 🏠
 
-8D Distinction Task — ML Mini Project. Predicts residential sale prices in
-Mosman, Parramatta and Liverpool (Sydney) from basic property
-characteristics, using a Random Forest model trained on 201 real,
-completed Domain.com.au auction/sale results (2018–2020).
+Decision-support prototype that predicts sale prices for properties in **Mosman**, **Marrickville**, and **Bankstown**, Sydney, trained on real sold-listing data scraped from Domain.com.au.
 
-## Contents
+**🔗 Live app:** [sydney-housing-predictor.streamlit.app](https://sydney-housing-predictor.streamlit.app)
 
-- `sydney_housing_3suburbs.csv` — the cleaned project dataset (201 rows).
-- `Sydney-List-raw.csv` — the original Sydney-wide source data (~30,000 rows,
-  from [briandorricott/SydneyHousePricesCovid](https://github.com/briandorricott/SydneyHousePricesCovid)),
-  kept for full reproducibility of the filtering step.
-- `Sydney_Housing_ML_Project.ipynb` — the full analysis notebook (Parts 1–5:
-  data collection, EDA, feature engineering, model development/evaluation,
-  prediction-failure analysis, and the ML vs LLM vs human comparison).
-  Re-running it from top to bottom regenerates `house_price_model.joblib`
-  and every figure in the report.
-- `house_price_model.joblib` — the trained Random Forest pipeline (exported
-  by the notebook), loaded directly by the app.
-- `app.py` — the Streamlit decision-support app.
-- `requirements.txt` — Python dependencies for the app.
-- `fig_app_mockup.png` — a mockup of the app's interface (see note below).
+[![Streamlit App](https://static.streamlit.io/badges/streamlit_badge_black_white.svg)](https://sydney-housing-predictor.streamlit.app)
 
-## Reproducing the analysis
+---
 
-```bash
-pip install -r requirements.txt jupyter nbclient nbformat imbalanced-learn
-jupyter nbconvert --to notebook --execute --inplace Sydney_Housing_ML_Project.ipynb
+## What it does
+
+Enter a suburb, dwelling type, bedrooms, bathrooms, car spaces and (optionally) land size, and the app returns:
+
+- A predicted sale price from a trained **Random Forest** regression model
+- The suburb's min / median / max price range for context
+- A bar chart comparing the prediction against that range
+- An explicit disclaimer that the output is a statistical estimate, not a professional valuation
+
+## Dataset
+
+506 real sold properties collected directly from Domain.com.au's sold-listings search (August 2026 snapshot, sales spanning roughly January–August 2026):
+
+| Suburb | Properties |
+|---|---|
+| Mosman | 169 |
+| Marrickville | 167 |
+| Bankstown | 170 |
+
+Listings marked "Price Withheld" were excluded since price is the prediction target. Fields captured: address, sale date, sale method, price, bedrooms, bathrooms, car spaces, land size (where shown), and property type.
+
+## Model
+
+Three models were compared with 5-fold cross-validation on log(price): Ridge Regression, Random Forest, and Gradient Boosting. **Random Forest** was selected for deployment — it produced the best validation MAE, RMSE, MAPE and R² of the three, with a smaller overfitting gap than Gradient Boosting.
+
+| Model | Val MAE | Val MAPE | Val R² |
+|---|---|---|---|
+| Ridge Regression | $415,001 | 19.5% | 0.879 |
+| **Random Forest (deployed)** | **$330,567** | **14.6%** | **0.922** |
+| Gradient Boosting | $344,735 | 15.4% | 0.918 |
+
+On the held-out test set: MAE $677,167, RMSE $2,162,817, MAPE 16.7%, R²(log) 0.896. The largest remaining prediction errors are concentrated in ultra-high-value Mosman trophy homes (multi-million-dollar sales with limited comparable training examples) — full error analysis is in the notebook.
+
+## Repo structure
+
+```
+.
+├── app.py                                     # Streamlit app
+├── price_pipeline.joblib                      # Trained Random Forest pipeline (preprocessing + model)
+├── suburb_price_context.csv                   # Suburb min/median/max price lookup used by the app
+├── mosman_marrickville_bankstown_sold.csv      # Real sold-property dataset (506 rows)
+├── 8D_Distinction_Task_Sydney_Housing.ipynb    # Full analysis notebook (EDA, modelling, error analysis)
+├── 8D_Distinction_Task_Report.pdf              # Written report summarising methodology and findings
+├── requirements.txt                            # Python dependencies
+└── runtime.txt                                 # Pinned Python version for Streamlit Community Cloud
 ```
 
-This re-runs every step (data loading/filtering, EDA, feature engineering,
-the three regression models with 5-fold CV, the holdout evaluation, the
-prediction-failure analysis, and the ML/LLM/human comparison) and re-saves
-`house_price_model.joblib`.
-
-## Running the app locally
+## Run locally
 
 ```bash
 pip install -r requirements.txt
 streamlit run app.py
 ```
 
-Then open the URL Streamlit prints (typically `http://localhost:8501`) in
-your browser. Enter a suburb, property type, bedrooms, bathrooms, car
-spaces, a sale/valuation date, and the distance to the nearest train
-station (a sensible suburb-typical default is pre-filled), then click
-**Predict sale price**.
+Then open `http://localhost:8501`.
 
-## Live deployment
+## Reproduce the analysis
 
-The app is deployed and publicly accessible at:
-**https://sydney-housing-predictor.streamlit.app/**
+```bash
+jupyter nbconvert --to notebook --execute 8D_Distinction_Task_Sydney_Housing.ipynb
+```
 
-## Deploying for free on GitHub + Streamlit Community Cloud
+This re-runs data loading, EDA, model training/evaluation, error analysis, and re-saves `price_pipeline.joblib` + `suburb_price_context.csv`.
 
-1. Create a new **public** GitHub repository and push this whole folder to
-   it (`app.py`, `requirements.txt`, and `house_price_model.joblib` are the
-   three files the app strictly needs at runtime).
-2. Go to <https://share.streamlit.io>, sign in with your GitHub account,
-   and click **New app**.
-3. Select the repository and branch, set **Main file path** to `app.py`,
-   and click **Deploy**.
-4. Streamlit Cloud installs `requirements.txt` automatically and serves the
-   app at a public `https://<your-app-name>.streamlit.app` URL within a
-   couple of minutes.
+## Notes & limitations
 
-## Note on the app screenshot in the report
+- ~half of Domain listings withhold sale price at the vendor's request, which likely under-represents the top end of each market (especially Mosman).
+- Land size is missing for ~49% of rows (mostly units); treated as unreliable for units rather than trusted at face value.
+- The model is a statistical estimate for decision-support purposes only — **not** a substitute for a licensed valuation.
 
-This project was built and verified in a sandboxed, headless analysis
-environment with no GUI browser available, so the screenshot originally
-included in the report (`fig_app_mockup.png`) is an honest, clearly-labelled
-mockup that reproduces `app.py`'s exact layout and widget labels, populated
-with a **real prediction from the trained model** (not a made-up number).
-The app has since been deployed live at the link above — visiting it and
-taking a real screenshot there is recommended for final submission in
-place of the mockup, if a literal screenshot is required.
+## Acknowledgement
 
-## GenAI acknowledgement
-
-This project (analysis notebook, app, and report) was developed with the
-assistance of Claude (Anthropic) for planning, coding, execution and
-drafting. Claude also produced the "LLM estimate" column in Part 5 as a
-live, genuine model output (not a simulation). See the full acknowledgement
-and methodology notes in the PDF report.
+Claude (Anthropic) was used as a development assistant: to collect the sold-listing data via browser automation, to draft/refactor the analysis code, and to generate the LLM valuation arm discussed in the accompanying report. The dataset is real, publicly-listed sold-property data — not synthetic.
