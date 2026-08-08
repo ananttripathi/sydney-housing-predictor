@@ -97,7 +97,7 @@ def compact_price(value: float) -> str:
 st.markdown("""
 <div class="hero">
     <h1>🏠 Sydney Housing Price Predictor</h1>
-    <p>Decision-support prototype &middot; 8D Distinction Task &middot; trained on 103 real sold properties
+    <p>Decision-support prototype &middot; 8D Distinction Task &middot; trained on 222 real sold properties
     across Mosman, Marrickville and Bankstown (Domain.com.au, 2026)</p>
 </div>
 """, unsafe_allow_html=True)
@@ -167,21 +167,28 @@ with tab_predict:
                 text=[f"${v:,.0f}" for v in [ctx["min"], ctx["median"], pred_price, ctx["max"]]],
                 textposition="outside",
                 textfont=dict(color="#0f2a4a", size=13),
+                cliponaxis=False,
             ))
             fig.update_layout(
-                height=320, margin=dict(l=10, r=10, t=20, b=10),
+                height=380, margin=dict(l=80, r=30, t=50, b=70),
                 yaxis_title="Price ($)", showlegend=False,
                 plot_bgcolor="white", paper_bgcolor="white",
-                font=dict(color="#0f2a4a"),
+                font=dict(color="#0f2a4a", size=12),
             )
-            fig.update_xaxes(color="#0f2a4a", tickfont=dict(color="#0f2a4a"), gridcolor="#e6edf4")
-            fig.update_yaxes(color="#0f2a4a", tickfont=dict(color="#0f2a4a"), gridcolor="#e6edf4")
+            fig.update_xaxes(
+                color="#0f2a4a", tickfont=dict(color="#0f2a4a", size=12),
+                gridcolor="#e6edf4", automargin=True,
+            )
+            fig.update_yaxes(
+                color="#0f2a4a", tickfont=dict(color="#0f2a4a", size=12),
+                gridcolor="#e6edf4", automargin=True, tickformat="$,.0f",
+            )
             # theme=None keeps our explicit colors instead of Streamlit overriding them to match
             # the viewer's light/dark mode (which was causing white-on-white invisible text).
             st.plotly_chart(fig, width="stretch", theme=None)
 
             st.info(
-                "⚠️ This is a statistical estimate from a small (103-property) training sample, "
+                "⚠️ This is a statistical estimate from a modest (222-property) training sample, "
                 "not a professional valuation. It is least reliable for atypical properties "
                 "(unusually large/small land, missing land size, or features outside the training "
                 "range) -- see Part 4 of the accompanying report for where predictions should be "
@@ -199,7 +206,7 @@ with tab_predict:
 with tab_about:
     st.subheader("About this model")
     st.write(
-        "Trained on 103 real sold properties collected from Domain.com.au's sold-listings search "
+        "Trained on 222 real sold properties collected from Domain.com.au's sold-listings search "
         "(Mosman, Marrickville, Bankstown; August 2026 snapshot). Model: **Gradient Boosting Regressor** "
         "on log(price), selected ahead of Ridge Regression and Random Forest based on 5-fold "
         "cross-validated MAE, RMSE, MAPE and R² -- see Part 3 of the accompanying report."
