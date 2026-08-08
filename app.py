@@ -105,7 +105,7 @@ with tab_predict:
                 "Land size (m²)", min_value=0, max_value=1000, value=250, step=10,
                 disabled=not has_land,
             )
-            submitted = st.form_submit_button("Predict sale price ➜", use_container_width=True)
+            submitted = st.form_submit_button("Predict sale price ➜", width="stretch")
 
     with col_result:
         st.subheader("Estimated sale price")
@@ -148,7 +148,7 @@ with tab_predict:
                 yaxis_title="Price ($)", showlegend=False,
                 plot_bgcolor="white", paper_bgcolor="white",
             )
-            st.plotly_chart(fig, use_container_width=True)
+            st.plotly_chart(fig, width="stretch")
 
             st.info(
                 "⚠️ This is a statistical estimate from a small (103-property) training sample, "
@@ -174,11 +174,10 @@ with tab_about:
         "on log(price), selected ahead of Ridge Regression and Random Forest based on 5-fold "
         "cross-validated MAE, RMSE, MAPE and R² -- see Part 3 of the accompanying report."
     )
-    st.dataframe(
-        suburb_context.rename(columns={"median": "Median", "min": "Min", "max": "Max"})
-        .style.format("${:,.0f}"),
-        use_container_width=True,
-    )
+    display_context = suburb_context.rename(columns={"median": "Median", "min": "Min", "max": "Max"}).copy()
+    for col in display_context.columns:
+        display_context[col] = display_context[col].map(lambda v: f"${v:,.0f}")
+    st.dataframe(display_context, width="stretch")
     st.caption(
         "Full methodology, error analysis, ML-vs-LLM-vs-human comparison and ethical reflection are in "
         "the accompanying PDF report and Jupyter notebook."
