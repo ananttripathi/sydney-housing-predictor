@@ -30,10 +30,15 @@ st.markdown("""
     .hero h1 {margin: 0; font-size: 1.9rem; color: white;}
     .hero p {margin: 0.35rem 0 0 0; color: #d8e6f4; font-size: 0.95rem;}
     div[data-testid="stMetric"] {
-        background: #f4f8fc; border: 1px solid #dbe6f0; border-radius: 10px;
+        background: #f4f8fc !important; border: 1px solid #dbe6f0; border-radius: 10px;
         padding: 0.8rem 0.9rem 0.5rem 0.9rem;
     }
-    div[data-testid="stMetricLabel"] {color: #4a6280;}
+    div[data-testid="stMetric"] * {color: #0f2a4a !important;}
+    div[data-testid="stMetricLabel"] p {color: #4a6280 !important; font-weight: 600;}
+    div[data-testid="stMetricValue"] {color: #0f2a4a !important;}
+    div[data-testid="stMetricDeltaIcon-Up"] + div,
+    div[data-testid="stMetricDelta"] {color: #0d7a3f !important;}
+    div[data-testid="stMetricDelta"] svg {fill: #0d7a3f !important;}
     .price-card {
         background: linear-gradient(135deg, #103a63, #1c5a94);
         border-radius: 14px; padding: 1.4rem 1.8rem; color: white; text-align: center;
@@ -159,8 +164,8 @@ with tab_predict:
             )
         else:
             st.markdown(
-                "<div style='padding:2.5rem 1rem; text-align:center; color:#8a97a6; "
-                "border:1px dashed #cfd8e3; border-radius:12px;'>"
+                "<div style='padding:2.5rem 1rem; text-align:center; color:#5a6b80; "
+                "background:#f4f8fc; border:1px dashed #b9cadd; border-radius:12px;'>"
                 "Fill in the property details and click <b>Predict sale price</b> to see an estimate here."
                 "</div>", unsafe_allow_html=True
             )
