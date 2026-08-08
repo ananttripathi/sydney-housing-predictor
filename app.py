@@ -1,140 +1,191 @@
 """
-Sydney Housing Price Prediction - Decision Support App
---------------------------------------------------------
-A simple Streamlit app that loads the trained Random Forest pipeline
-(house_price_model.joblib, produced by the project notebook) and lets a
-user enter property characteristics to get a predicted sale price for
-Mosman, Parramatta, or Liverpool.
+8D Distinction Task -- Sydney Housing Price Prediction and Decision Support System
+Streamlit app: loads the trained pipeline (gb_price_pipeline.joblib) produced by the
+project notebook and returns a predicted sale price for user-entered property features.
 
-Run locally:
-    pip install -r requirements.txt
-    streamlit run app.py
-
-Deploy for free on Streamlit Community Cloud:
-    1. Push this folder (app.py, requirements.txt, house_price_model.joblib)
-       to a public GitHub repository.
-    2. Go to https://share.streamlit.io , sign in with GitHub, and click
-       "New app".
-    3. Select the repository/branch and set the main file to `app.py`.
-    4. Click Deploy - Streamlit Cloud installs requirements.txt and hosts
-       the app at a public https://<yourapp>.streamlit.app URL.
+Run with:  streamlit run app.py
 """
-
-import datetime as dt
-
 import joblib
 import numpy as np
 import pandas as pd
 import streamlit as st
+import plotly.graph_objects as go
 
-st.set_page_config(page_title="Sydney Housing Price Predictor", page_icon="\U0001F3E0", layout="centered")
+st.set_page_config(
+    page_title="Sydney Housing Price Predictor",
+    page_icon="🏠",
+    layout="wide",
+    initial_sidebar_state="expanded",
+)
 
-MODEL_PATH = "house_price_model.joblib"
-TRAIN_START_DATE = dt.date(2018, 5, 26)  # earliest sale date in the training data; used to compute days_since_start
-
-SUBURB_STATION_DISTANCE = {
-    # Approximate median distance-to-nearest-station (metres) observed in the training data,
-    # used as a sensible default so a non-technical user doesn't need to know this figure.
-    "Mosman": 6800,
-    "Parramatta": 19400,
-    "Liverpool": 27000,
-}
-
-
-AUTHOR_INFO = {
-    "Name": "Anant Kumar Tripathi",
-    "Student ID": "226634688",
-    "Course code": "S773",
-    "Course name": "Master of Data Science (Global)",
-    "Subject": "SIG720 - Machine Learning",
-    "Task": "8D",
-    "GitHub": "https://github.com/ananttripathi/",
-}
+# --------------------------------------------------------------------------- styling
+st.markdown("""
+<style>
+    .block-container {padding-top: 1.6rem; padding-bottom: 2rem; max-width: 1100px;}
+    .hero {
+        background: linear-gradient(135deg, #0f2a4a 0%, #1a4a7a 55%, #2d6ba3 100%);
+        border-radius: 14px; padding: 1.6rem 2rem; margin-bottom: 1.4rem;
+        color: white;
+    }
+    .hero h1 {margin: 0; font-size: 1.9rem; color: white;}
+    .hero p {margin: 0.35rem 0 0 0; color: #d8e6f4; font-size: 0.95rem;}
+    div[data-testid="stMetric"] {
+        background: #f4f8fc; border: 1px solid #dbe6f0; border-radius: 10px;
+        padding: 0.8rem 0.9rem 0.5rem 0.9rem;
+    }
+    div[data-testid="stMetricLabel"] {color: #4a6280;}
+    .price-card {
+        background: linear-gradient(135deg, #103a63, #1c5a94);
+        border-radius: 14px; padding: 1.4rem 1.8rem; color: white; text-align: center;
+        margin-bottom: 0.8rem;
+    }
+    .price-card .label {font-size: 0.85rem; letter-spacing: 0.05em; text-transform: uppercase; color: #bcd6ef;}
+    .price-card .value {font-size: 2.6rem; font-weight: 700; margin: 0.15rem 0;}
+    .price-card .sub {font-size: 0.85rem; color: #cfe1f2;}
+    .footer-note {color: #8a97a6; font-size: 0.8rem;}
+    .stButton>button {
+        background: #1c5a94; color: white; border-radius: 8px; border: none;
+        font-weight: 600; padding: 0.55rem 1rem;
+    }
+    .stButton>button:hover {background: #124274; color: white;}
+</style>
+""", unsafe_allow_html=True)
 
 
 @st.cache_resource
-def load_model():
-    return joblib.load(MODEL_PATH)
+def load_pipeline():
+    return joblib.load("gb_price_pipeline.joblib")
 
 
-def render_sidebar():
-    with st.sidebar:
-        st.subheader("About this project")
-        for label, value in AUTHOR_INFO.items():
-            if label == "GitHub":
-                st.markdown(f"**{label}:** [{value}]({value})")
-            else:
-                st.markdown(f"**{label}:** {value}")
+@st.cache_data
+def load_context():
+    return pd.read_csv("suburb_price_context.csv", index_col=0)
 
 
-def main():
-    render_sidebar()
+pipeline = load_pipeline()
+suburb_context = load_context()
 
-    st.title("Sydney Housing Price Predictor")
+SUBURB_DIST = {"Mosman": 8, "Marrickville": 7, "Bankstown": 17}
+SUBURB_BLURB = {
+    "Mosman": "Premium harbourside, lower north shore",
+    "Marrickville": "Gentrified inner-west, terraces & apartments",
+    "Bankstown": "Affordable outer south-west, transport hub",
+}
+DWELLING_TYPES = ["House", "Townhouse/Semi", "Unit"]
+
+# --------------------------------------------------------------------------- hero
+st.markdown("""
+<div class="hero">
+    <h1>🏠 Sydney Housing Price Predictor</h1>
+    <p>Decision-support prototype &middot; 8D Distinction Task &middot; trained on 103 real sold properties
+    across Mosman, Marrickville and Bankstown (Domain.com.au, 2026)</p>
+</div>
+""", unsafe_allow_html=True)
+
+tab_predict, tab_about = st.tabs(["🔮 Predict a price", "ℹ️ About this model"])
+
+# --------------------------------------------------------------------------- PREDICT TAB
+with tab_predict:
+    col_form, col_result = st.columns([1, 1.3], gap="large")
+
+    with col_form:
+        st.subheader("Property details")
+        with st.form("predict_form"):
+            suburb = st.selectbox("Suburb", list(SUBURB_DIST.keys()))
+            st.caption(SUBURB_BLURB[suburb])
+            dwelling_type = st.selectbox("Dwelling type", DWELLING_TYPES)
+
+            b1, b2, b3 = st.columns(3)
+            beds = b1.number_input("Bedrooms", min_value=0, max_value=10, value=3, step=1)
+            baths = b2.number_input("Bathrooms", min_value=0, max_value=10, value=2, step=1)
+            parking = b3.number_input("Car spaces", min_value=0, max_value=10, value=1, step=1)
+
+            has_land = st.checkbox("Land size known?", value=(dwelling_type != "Unit"))
+            land_size = st.slider(
+                "Land size (m²)", min_value=0, max_value=1000, value=250, step=10,
+                disabled=not has_land,
+            )
+            submitted = st.form_submit_button("Predict sale price ➜", use_container_width=True)
+
+    with col_result:
+        st.subheader("Estimated sale price")
+        if submitted:
+            row = pd.DataFrame([{
+                "beds": beds,
+                "baths": baths,
+                "parking": parking,
+                "land_size_sqm": land_size if has_land else np.nan,
+                "distance_to_cbd_km": SUBURB_DIST[suburb],
+                "suburb": suburb,
+                "dwelling_type": dwelling_type,
+            }])
+            pred_price = float(np.exp(pipeline.predict(row)[0]))
+            ctx = suburb_context.loc[suburb]
+
+            st.markdown(f"""
+            <div class="price-card">
+                <div class="label">Predicted sale price</div>
+                <div class="value">${pred_price:,.0f}</div>
+                <div class="sub">{beds}-bed {dwelling_type.lower()} &middot; {suburb}</div>
+            </div>
+            """, unsafe_allow_html=True)
+
+            m1, m2, m3 = st.columns(3)
+            m1.metric("Suburb min", f"${ctx['min']:,.0f}")
+            m2.metric("Suburb median", f"${ctx['median']:,.0f}", delta=f"{(pred_price/ctx['median']-1)*100:+.0f}% vs. this pred.")
+            m3.metric("Suburb max", f"${ctx['max']:,.0f}")
+
+            fig = go.Figure()
+            fig.add_trace(go.Bar(
+                x=["Suburb min", "Suburb median", "Your prediction", "Suburb max"],
+                y=[ctx["min"], ctx["median"], pred_price, ctx["max"]],
+                marker_color=["#a9c4de", "#5f8fbd", "#e8863c", "#a9c4de"],
+                text=[f"${v:,.0f}" for v in [ctx["min"], ctx["median"], pred_price, ctx["max"]]],
+                textposition="outside",
+            ))
+            fig.update_layout(
+                height=320, margin=dict(l=10, r=10, t=20, b=10),
+                yaxis_title="Price ($)", showlegend=False,
+                plot_bgcolor="white", paper_bgcolor="white",
+            )
+            st.plotly_chart(fig, use_container_width=True)
+
+            st.info(
+                "⚠️ This is a statistical estimate from a small (103-property) training sample, "
+                "not a professional valuation. It is least reliable for atypical properties "
+                "(unusually large/small land, missing land size, or features outside the training "
+                "range) -- see Part 4 of the accompanying report for where predictions should be "
+                "treated cautiously."
+            )
+        else:
+            st.markdown(
+                "<div style='padding:2.5rem 1rem; text-align:center; color:#8a97a6; "
+                "border:1px dashed #cfd8e3; border-radius:12px;'>"
+                "Fill in the property details and click <b>Predict sale price</b> to see an estimate here."
+                "</div>", unsafe_allow_html=True
+            )
+
+# --------------------------------------------------------------------------- ABOUT TAB
+with tab_about:
+    st.subheader("About this model")
+    st.write(
+        "Trained on 103 real sold properties collected from Domain.com.au's sold-listings search "
+        "(Mosman, Marrickville, Bankstown; August 2026 snapshot). Model: **Gradient Boosting Regressor** "
+        "on log(price), selected ahead of Ridge Regression and Random Forest based on 5-fold "
+        "cross-validated MAE, RMSE, MAPE and R² -- see Part 3 of the accompanying report."
+    )
+    st.dataframe(
+        suburb_context.rename(columns={"median": "Median", "min": "Min", "max": "Max"})
+        .style.format("${:,.0f}"),
+        use_container_width=True,
+    )
     st.caption(
-        "Decision-support prototype for the 8D ML Mini Project - Random Forest model trained on "
-        "201 completed Domain.com.au sales (2018-2020) across Mosman, Parramatta and Liverpool."
-    )
-    st.warning(
-        "This model was trained on a small, historical (2018-2020) sample for a coursework project. "
-        "Predictions are illustrative only and should not be used for real financial decisions.",
-        icon="⚠️",
+        "Full methodology, error analysis, ML-vs-LLM-vs-human comparison and ethical reflection are in "
+        "the accompanying PDF report and Jupyter notebook."
     )
 
-    model = load_model()
-
-    with st.form("prediction_form"):
-        col1, col2 = st.columns(2)
-        with col1:
-            suburb = st.selectbox("Suburb", ["Mosman", "Parramatta", "Liverpool"])
-            property_type = st.selectbox("Property type", ["House", "Unit", "Townhouse"])
-            bedrooms = st.number_input("Bedrooms", min_value=1, max_value=10, value=3, step=1)
-        with col2:
-            bathrooms = st.number_input("Bathrooms", min_value=1, max_value=6, value=2, step=1)
-            carspaces = st.number_input("Car spaces", min_value=0, max_value=8, value=1, step=1)
-            sale_date = st.date_input("Sale / valuation date", value=dt.date(2020, 6, 1),
-                                       min_value=TRAIN_START_DATE, max_value=dt.date(2020, 12, 31))
-
-        distance_default = SUBURB_STATION_DISTANCE[suburb]
-        distance_to_station = st.slider(
-            "Distance to nearest train station (metres)",
-            min_value=0, max_value=30000, value=int(distance_default), step=100,
-            help="Defaults to the typical distance observed for this suburb in the training data.",
-        )
-
-        submitted = st.form_submit_button("Predict sale price")
-
-    if submitted:
-        days_since_start = (sale_date - TRAIN_START_DATE).days
-        X = pd.DataFrame([{
-            "bedrooms": bedrooms,
-            "bathrooms": bathrooms,
-            "carspaces": carspaces,
-            "central_station": distance_to_station,
-            "days_since_start": days_since_start,
-            "suburb": suburb,
-            "property_type_grouped": property_type,
-        }])
-        log_pred = model.predict(X)[0]
-        pred_price = float(np.expm1(log_pred))
-
-        st.success(f"### Predicted sale price: ${pred_price:,.0f}")
-        st.caption(
-            "Note: our evaluation found this model's predictions are far less reliable for atypical, "
-            "premium, or renovated properties (see Part 4 of the project report) - treat this estimate "
-            "as a rough, data-driven starting point, not a valuation."
-        )
-
-        with st.expander("See the exact features sent to the model"):
-            st.dataframe(X)
-
-    st.divider()
-    st.caption(
-        f"Built by {AUTHOR_INFO['Name']} ({AUTHOR_INFO['Student ID']}) - "
-        f"{AUTHOR_INFO['Course name']}, {AUTHOR_INFO['Subject']} - Task {AUTHOR_INFO['Task']}. "
-        f"[Source on GitHub]({AUTHOR_INFO['GitHub']})"
-    )
-
-
-if __name__ == "__main__":
-    main()
+st.markdown(
+    "<p class='footer-note'>8D Distinction Task &middot; Sydney Housing Price Prediction and Decision "
+    "Support System &middot; Anant Kumar Tripathi</p>",
+    unsafe_allow_html=True,
+)
