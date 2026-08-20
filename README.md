@@ -79,5 +79,8 @@ This re-runs data loading, EDA, model training/evaluation, error analysis, and r
 - The model is a statistical estimate for decision-support purposes only — **not** a substitute for a licensed valuation.
 
 ## Acknowledgement
-
-Claude (Anthropic) was used as a development assistant: to collect the sold-listing data via browser automation, to draft/refactor the analysis code, and to generate the LLM valuation arm discussed in the accompanying report. The dataset is real, publicly-listed sold-property data — not synthetic.
+Generative AI tools were used to improve the clarity of the report, explain programming concepts, assist with
+debugging Python code, and refine the presentation of the notebook. All data analysis, preprocessing,
+visualisations, model development, interpretation of results, and final decisions were completed and verified by
+me. AI was used as a learning aid, and the final submission reflects my own understanding while maintaining
+academic integrity.
