@@ -1,4 +1,4 @@
-# Sydney Housing Price Predictor 🏠
+# Sydney Housing Price Predictor 
 
 Decision-support prototype that predicts sale prices for properties in **Mosman**, **Marrickville**, and **Bankstown**, Sydney, trained on real sold-listing data scraped from Domain.com.au.
 
