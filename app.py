@@ -142,21 +142,23 @@ with tab_predict:
             pred_price = float(np.exp(pipeline.predict(row)[0]))
             ctx = suburb_context.loc[suburb]
 
+            vs_median_pct = (pred_price / ctx["median"] - 1) * 100
+            vs_median_word = "above" if vs_median_pct >= 0 else "below"
+
             st.markdown(f"""
             <div class="price-card">
                 <div class="label">Predicted sale price</div>
                 <div class="value">${pred_price:,.0f}</div>
                 <div class="sub">{beds}-bed {dwelling_type.lower()} &middot; {suburb}</div>
+                <div class="sub" style="margin-top:0.35rem;">
+                    {abs(vs_median_pct):.0f}% {vs_median_word} suburb median
+                </div>
             </div>
             """, unsafe_allow_html=True)
 
             m1, m2, m3 = st.columns(3)
             m1.metric("Suburb min", compact_price(ctx["min"]), help=f"${ctx['min']:,.0f}")
-            m2.metric(
-                "Suburb median", compact_price(ctx["median"]),
-                delta=f"{(pred_price/ctx['median']-1)*100:+.0f}% vs. pred.",
-                help=f"${ctx['median']:,.0f}",
-            )
+            m2.metric("Suburb median", compact_price(ctx["median"]), help=f"${ctx['median']:,.0f}")
             m3.metric("Suburb max", compact_price(ctx["max"]), help=f"${ctx['max']:,.0f}")
 
             fig = go.Figure()
